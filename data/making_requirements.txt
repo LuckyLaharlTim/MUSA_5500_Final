@@ -1,0 +1,10 @@
+
+# make requirements.txt all in python
+import subprocess, sys
+output = subprocess.run(args = ["pip", "freeze"], capture_output=True)
+print(output.stdout.decode('utf-8'))
+PATH = "requirements.txt"
+f = open(PATH,"wb")
+f.write(output.stdout)
+f.close()
+        
