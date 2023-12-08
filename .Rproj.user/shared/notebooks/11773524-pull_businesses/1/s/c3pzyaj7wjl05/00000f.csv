@@ -1,0 +1,54 @@
+"0","options(tigris_use_cache = TRUE) # set cache = TRUE to save time for future calls"
+"0",""
+"0","zcta <- zctas(year = 2021) %>% # get all ZIPs in US (we can't filter by state unfortunately)"
+"0","  rename(zip_code = GEOID20) %>% "
+"0","  st_transform(""EPSG:2272"") %>% # re-project"
+"0","  filter(substr(ZCTA5CE20, start = 1, stop = 3) == ""191"") %>%"
+"0","  erase_water(area_threshold = 0.5)"
+"2","Fetching area water data for your dataset's location...
+"
+"2","Erasing water area...
+If this is slow, try a larger area threshold value.
+"
+"0","zcta_bg <- zctas(year = 2021) %>% # get all ZIPs in US"
+"0","  rename(zip_code = GEOID20) %>% "
+"0","  st_transform(""EPSG:2272"") %>% # re-project"
+"0","  st_crop(st_bbox(zcta %>% st_buffer(5000))) %>%"
+"0","  erase_water(area_threshold = 0.5)"
+"2","Warning: attribute variables are assumed to be spatially constant throughout all geometries"
+"2","Fetching area water data for your dataset's location...
+"
+"2","Erasing water area...
+If this is slow, try a larger area threshold value.
+"
+"0","zip_list <- zcta$ZCTA5CE20 # list of zip codes to include in API query"
+"0",""
+"0","phl_bound <- st_union(zcta) %>% # phl boundary"
+"0","  st_as_sf()"
+"0",""
+"0","roads_pa <- primary_secondary_roads(state = ""PA"", year = 2021) %>%"
+"0","  st_transform(""EPSG:2272"") %>%"
+"0","  st_crop(st_bbox(zcta %>% st_buffer(5000))) %>%"
+"0","  erase_water()"
+"2","Using FIPS code '42' for state 'PA'
+"
+"2","Warning: attribute variables are assumed to be spatially constant throughout all geometries"
+"2","Fetching area water data for your dataset's location...
+"
+"2","Erasing water area...
+If this is slow, try a larger area threshold value.
+"
+"0","roads_nj <- primary_secondary_roads(state = ""NJ"", year = 2021) %>%"
+"0","  st_transform(""EPSG:2272"") %>%"
+"0","  st_crop(st_bbox(zcta %>% st_buffer(5000))) %>%"
+"0","  erase_water()"
+"2","Using FIPS code '34' for state 'NJ'
+"
+"2","Warning: attribute variables are assumed to be spatially constant throughout all geometries"
+"2","Fetching area water data for your dataset's location...
+"
+"2","Erasing water area...
+If this is slow, try a larger area threshold value.
+"
+"0","roads <- rbind(roads_nj, roads_pa)"
+"0",""

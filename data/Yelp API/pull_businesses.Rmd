@@ -4,7 +4,8 @@ author: "Anna Duan"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-
+# Setup
+## Libraries
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 # libraries 
@@ -16,6 +17,8 @@ library(mapview)
 library(httr)
 library(viridis)
 ```
+
+## Tigris boundaries 
 ```{r load tigris boundaries}
 options(tigris_use_cache = TRUE) # set cache = TRUE to save time for future calls
 
@@ -36,8 +39,22 @@ zip_list <- zcta$ZCTA5CE20 # list of zip codes to include in API query
 
 phl_bound <- st_union(zcta) %>% # phl boundary
   st_as_sf()
-```
 
+roads_pa <- primary_secondary_roads(state = "PA", year = 2021) %>%
+  st_transform("EPSG:2272") %>%
+  st_crop(st_bbox(zcta %>% st_buffer(5000))) %>%
+  erase_water()
+
+roads_nj <- primary_secondary_roads(state = "NJ", year = 2021) %>%
+  st_transform("EPSG:2272") %>%
+  st_crop(st_bbox(zcta %>% st_buffer(5000))) %>%
+  erase_water()
+
+roads <- rbind(roads_nj, roads_pa)
+
+```
+# Yelp Fusion API
+## get_yelp() function
 ```{r get yelp function}
 #### Yelp api call function ####
 url <- "https://api.yelp.com/v3/businesses/search"
@@ -46,7 +63,7 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
   
   queryString = list(
     location = zip_code, # argument to be filled
-    term = "oxtail", # argument to be filled
+    term = category, # argument to be filled
     sort_by = "distance", # sort by dist
     limit = 50, # 50 is the max for yelp fusion api, any higher and it won't work
     offset = offset_num # argument to be filled
@@ -54,7 +71,7 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
   
   # use "GET" verb to request information from url
   response <- VERB("GET", url, query = queryString, 
-                   add_headers('Authorization' = 'Bearer RF7JfYA8GMJRVlASJCtsrJvLMhE8nbKDjkQ8B_7ZYUPWforzJV1mNDb6ibRWJfMUu_RHFG-NxCF1QHeasyOxlpid7ZbQ1tQBcACDZBWE2rLYKDhWD8Kxps0SZJJCZXYx'), 
+                   add_headers('Authorization' = 'Bearer hVIEeA6P5U7zyjMISG5Z6XTxKr8o6HVjT58cs419ulWYT49b-5JPLpbJfwEzSLgHcKZUz4SlT7fBG5NaHoKX9MKe_PM02Tw4_dO-EEr4tHNIZkd04Y8HV4NVPjpJZXYx'), 
                    content_type("application/octet-stream"), 
                    accept("application/json"))
   
@@ -62,14 +79,14 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
   yelp.json = content(response, "parsed", flatten = TRUE, simplify = TRUE)
   
   # retrieve columns from json structure
-  resto.name = data.frame(yelp.json$businesses$name)
-  resto.lat = data.frame(yelp.json$businesses$coordinates.latitude)
-  resto.lon = data.frame(yelp.json$businesses$coordinates.longitude)
-  resto.rating = data.frame(yelp.json$businesses$rating)
-  resto.addr = data.frame(yelp.json$businesses$location.address1)
+  biz.name = data.frame(yelp.json$businesses$name)
+  biz.lat = data.frame(yelp.json$businesses$coordinates.latitude)
+  biz.lon = data.frame(yelp.json$businesses$coordinates.longitude)
+  biz.rating = data.frame(yelp.json$businesses$rating)
+  biz.addr = data.frame(yelp.json$businesses$location.address1)
   
   # bind the columns into one dataframe
-  yelp.df = cbind(resto.name, resto.rating, resto.addr, resto.lat, resto.lon)  %>%
+  yelp.df = cbind(biz.name, biz.rating, biz.addr, biz.lat, biz.lon)  %>%
     as.data.frame()
   
   colnames(yelp.df) <- c("name", "rating", "address", "lat", "lon")
@@ -87,9 +104,9 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
   yelp.df <- yelp.df %>%
     cbind(cuis.df)
   
-  # Replace NA values with ""
-  yelp.df <- yelp.df %>% 
-    mutate(across(everything(), ~replace_na(.x, "")))
+  # # Replace NA values with ""
+  # yelp.df <- yelp.df %>% 
+  #   mutate(across(everything(), ~replace_na(.x, "")))
   
   # When creating an empty dataframe, use "" as default value
   if(nrow(yelp.df) == 0) {
@@ -100,6 +117,7 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
 }
 ```
 
+## API call / data collection
 ```{r call api}
 # Initialize a named list of empty dataframes
 initialize_named_dfs <- function(zips) { 
@@ -109,24 +127,27 @@ initialize_named_dfs <- function(zips) {
   return(named_list)
 }
 
-resto_list_0 <- initialize_named_dfs(zip_list) # Initiate list of restaurant dataframes for each offset (since the query limit is 50, offset = 1 would return 51-100)
-resto_list_1 <- initialize_named_dfs(zip_list) # 10 dfs x 50 restaurants each = a 500 restaurant sample per zip code
-resto_list_2 <- initialize_named_dfs(zip_list)
-resto_list_3 <- initialize_named_dfs(zip_list)
+biz_list_0 <- initialize_named_dfs(zip_list) # Initiate list of restaurant dataframes for each offset (since the query limit is 50, offset = 1 would return 51-100)
+biz_list_1 <- initialize_named_dfs(zip_list) # 10 dfs x 50 restaurants each = a 500 restaurant sample per zip code
+biz_list_2 <- initialize_named_dfs(zip_list)
+biz_list_3 <- initialize_named_dfs(zip_list)
 
-resto_list_4 <- initialize_named_dfs(zip_list)
-resto_list_5 <- initialize_named_dfs(zip_list)
-resto_list_6 <- initialize_named_dfs(zip_list)
+biz_list_4 <- initialize_named_dfs(zip_list)
+biz_list_5 <- initialize_named_dfs(zip_list)
+biz_list_6 <- initialize_named_dfs(zip_list)
 
-resto_list_7 <- initialize_named_dfs(zip_list)
-resto_list_8 <- initialize_named_dfs(zip_list)
+biz_list_7 <- initialize_named_dfs(zip_list)
+biz_list_8 <- initialize_named_dfs(zip_list)
+
+biz_list_9 <- initialize_named_dfs(zip_list)
+biz_list_10 <- initialize_named_dfs(zip_list)
 
 
 
 # master list to store the dataframes
-offset_list <- list(resto_list_0, resto_list_1, resto_list_2, resto_list_3,
-                    resto_list_4, resto_list_5, resto_list_6, resto_list_7,
-                    resto_list_8)
+offset_list <- list(biz_list_0, biz_list_1, biz_list_2, biz_list_3,
+                    biz_list_4, biz_list_5, biz_list_6, biz_list_7,
+                    biz_list_8, biz_list_9, biz_list_10 )
 
 # Loop through each offset (think of each offset as a page of results)
 for (i in 1:length(zip_list)) {
@@ -141,7 +162,7 @@ for (i in 1:length(zip_list)) {
     print(paste("batch ", offset + 1, ", ", "zip", zipnum, ": ", zip_code, sep = ""))
     
     # Fetch Yelp data for the zip code and store it in the list
-    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("restaurant", as.character(zip_code), offset)
+    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("culture", as.character(zip_code), offset)
     
     zipnum <- zipnum + 1 #iterate zipnum each loop
   }
@@ -149,17 +170,20 @@ for (i in 1:length(zip_list)) {
 }
 ```
 
+# Data preparation
+## Store response as dataframe
 ```{r gather data to df}
 # Combine all dataframes into one dataframe and remove duplicates
-resto.sf <- map_dfr(offset_list, ~ bind_rows(.x)) %>%
+biz.sf <- map_dfr(offset_list, ~ bind_rows(.x)) %>%
   unique() %>%
+  filter(!is.na(lat)) %>%
   st_as_sf(crs = 4326, coords = c("lon", "lat")) %>% 
   st_transform("EPSG:2272")
 
-resto.sf <- resto.sf %>%
-  filter(!grepl("american|Chinese|hotpot|korean|pho|vietnamese|asian|noodles|steakhouse|indian|sushi|taiwanese|shanghainese|italian|dimsum|british|cambodian", alias, ignore.case = TRUE))
-
 ```
 
+
+## Write geojson file
 ```{r write files}
+st_write(biz.sf, "nightlife.geojson", driver = "geojson")
 ```
