@@ -187,3 +187,8 @@ biz.sf <- map_dfr(offset_list, ~ bind_rows(.x)) %>%
 ```{r write files}
 st_write(biz.sf, "entertainment.geojson", driver = "geojson")
 ```
+## Write boundary files
+```{r write boundary files}
+phl <- places(state = 42, year = 2022) %>%
+  filter(NAME == "Philadelphia")
+```
