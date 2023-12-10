@@ -162,7 +162,7 @@ for (i in 1:length(zip_list)) {
     print(paste("batch ", offset + 1, ", ", "zip", zipnum, ": ", zip_code, sep = ""))
     
     # Fetch Yelp data for the zip code and store it in the list
-    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("culture", as.character(zip_code), offset)
+    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("entertainment", as.character(zip_code), offset)
     
     zipnum <- zipnum + 1 #iterate zipnum each loop
   }
