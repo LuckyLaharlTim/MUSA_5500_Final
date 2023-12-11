@@ -191,4 +191,6 @@ st_write(biz.sf, "entertainment.geojson", driver = "geojson")
 ```{r write boundary files}
 phl <- places(state = 42, year = 2022) %>%
   filter(NAME == "Philadelphia")
+
+st_write(phl, "phl_bound.geojson", driver = "geojson")
 ```
