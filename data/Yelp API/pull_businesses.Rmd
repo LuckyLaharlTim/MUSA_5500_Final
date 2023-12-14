@@ -71,7 +71,7 @@ get_yelp = function(category, zip_code, offset_num) { # args are category of bus
   
   # use "GET" verb to request information from url
   response <- VERB("GET", url, query = queryString, 
-                   add_headers('Authorization' = 'Bearer yKhYlEbDS83IT8QAX9xmAnTSecHwHlsMnqS1-JXEnPG9LoNNwn2BxqMYd4DaJKw-zS-WAw8lPPGW943nrGPp6NynuQuQmyzKLDcH0q42lwVfTMGxb3csS2u6hCMgZXYx'), 
+                   add_headers('Authorization' = 'Bearer 1xwuRlpBtU5ljQte7g0OlCuhdSZYWW8D9s8B0wJqQWNwPgQIb22FmwQ8FYMRo36FNyiMTa9U_ZRf-a58EaVc6YjGVxU3AT8A-KAHXbW6ZwVsu7Zm-QcUiD86fJFCZXYx'), 
                    content_type("application/octet-stream"), 
                    accept("application/json"))
   
@@ -162,7 +162,7 @@ for (i in 1:length(zip_list)) {
     print(paste("batch ", offset + 1, ", ", "zip", zipnum, ": ", zip_code, sep = ""))
     
     # Fetch Yelp data for the zip code and store it in the list
-    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("nature", as.character(zip_code), offset)
+    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("parks", as.character(zip_code), offset)
     
     zipnum <- zipnum + 1 #iterate zipnum each loop
   }
@@ -185,7 +185,7 @@ biz.sf <- map_dfr(offset_list, ~ bind_rows(.x)) %>%
 
 ## Write geojson file
 ```{r write files}
-st_write(biz.sf, "entertainment.geojson", driver = "geojson")
+st_write(biz.sf, "parks.geojson", driver = "geojson")
 ```
 ## Write boundary files
 ```{r write boundary files}
