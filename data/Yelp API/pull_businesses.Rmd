@@ -162,7 +162,7 @@ for (i in 1:length(zip_list)) {
     print(paste("batch ", offset + 1, ", ", "zip", zipnum, ": ", zip_code, sep = ""))
     
     # Fetch Yelp data for the zip code and store it in the list
-    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("parks", as.character(zip_code), offset)
+    offset_list[[i]][[as.character(zip_code)]] <- get_yelp("healthcare", as.character(zip_code), offset)
     
     zipnum <- zipnum + 1 #iterate zipnum each loop
   }
@@ -185,7 +185,7 @@ biz.sf <- map_dfr(offset_list, ~ bind_rows(.x)) %>%
 
 ## Write geojson file
 ```{r write files}
-st_write(biz.sf, "parks.geojson", driver = "geojson")
+st_write(biz.sf, "healthcare.geojson", driver = "geojson")
 ```
 ## Write boundary files
 ```{r write boundary files}
