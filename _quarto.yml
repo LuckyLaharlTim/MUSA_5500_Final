@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: website_docs
   preview:
     port: 3333
 
@@ -15,7 +15,7 @@ website:
     left: "&copy; CC-Anna Duan, Trevor Kapuvari, & Timothy Oliver, 2023"
 
   sidebar:
-    logo: "images/course-icon.png"
+    logo: "images/pha_logo.jpg"
     pinned: true
     align: center
     tools: 
