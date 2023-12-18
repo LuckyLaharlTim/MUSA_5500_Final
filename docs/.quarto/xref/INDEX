@@ -1,0 +1,26 @@
+{
+  "about.qmd": {
+    "about.html": "977888f2"
+  },
+  "index.qmd": {
+    "index.html": "2c9ebe79"
+  },
+  "analysis/1-python-code-blocks.qmd": {
+    "1-python-code-blocks.html": "9309e4c2"
+  },
+  "analysis/2-static-images.ipynb": {
+    "2-static-images.html": "043a0157"
+  },
+  "analysis/3-altair-hvplot.ipynb": {
+    "3-altair-hvplot.html": "4537b453"
+  },
+  "analysis/4-folium.ipynb": {
+    "4-folium.html": "cc889f5c"
+  },
+  "analysis/index.qmd": {
+    "index.html": "c3b87519"
+  },
+  "analysis/5-something.ipynb": {
+    "5-something.html": "fc131f8d"
+  }
+}
