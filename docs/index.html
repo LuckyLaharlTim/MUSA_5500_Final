@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Finding Commercial Corridors in Philadelphia - About the Project</title>
+<title>Finding Commercial Corridors in Philadelphia - Default page is in index.qmd</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About the Project</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-tools-main tools-wide">
     <a href="https://www.pha.phila.gov/housing/housing-choice-voucher/" rel="" title="Philadelphia Housing Authority - Housing Choice Vouchers" class="quarto-navigation-tool px-1" aria-label="Philadelphia Housing Authority - Housing Choice Vouchers"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final" rel="" title="Analysis Project GitHub" class="quarto-navigation-tool px-1" aria-label="Analysis Project GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/nicholashand" rel="" title="Other Social Media --CHANGE ICON AND LINK" class="quarto-navigation-tool px-1" aria-label="Other Social Media --CHANGE ICON AND LINK"><i class="bi bi-spotify"></i></a>
+    <a href="https://twitter.com/nicholashand" rel="" title="Other Social Media --CHANGE ICON AND LINK" class="quarto-navigation-tool px-1" aria-label="Other Social Media --CHANGE ICON AND LINK"><i class="bi bi-twitter"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -104,13 +104,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Project</span></a>
   </div>
 </li>
@@ -147,6 +147,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Interactive Maps with Folium</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis/5-yelp_clean_and_explore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yelp Amenity Data cleaning and exploratory analysis</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -155,14 +161,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a></li>
+  <li><a href="#find-out-more" id="toc-find-out-more" class="nav-link" data-scroll-target="#find-out-more">Find out more</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About the Project</h1>
+<h1 class="title">Default page is in index.qmd</h1>
+<p class="subtitle lead">Showing What Philadelphia Neghborhoods Offer</p>
 </div>
 
 
@@ -177,20 +191,33 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- Use a grid -->
-<div class="grid">
-<!-- Left column has a width of 4/12 and shows a picture of me -->
-<div class="g-col-4">
-<p><img src="images/housing-choice-voucher.jpg" class="img-fluid" style="width:3in"></p>
+<!-- start the markdown section for writing -->
+<!-- I recommend playing around in design with the index.qmd to make the story page Anna recommended. -->
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
+<p>We can create beautiful websites that describe complex technical analyses in Python using <a href="https://quarto.org">Quarto</a> and deploy them online using <a href="https://pages.github.com/">GitHub Pages</a>. This combination of tools is a really powerful way to create and share your work. This website is a demo that is meant to be used to create your own Quarto website for the final project in MUSA 550.</p>
+<p>Quarto is a relatively new tool, but is becoming popular quickly. It’s a successor to the Rmarkdown ecosystem that combines functionality into a single tool and also extends its computation power to other languages. Most importantly for us, Quarto supports executing Python code, allowing us to convert Jupyter notebooks to HTML and share them online.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<!-- Text gets a column with width 8/12 -->
-<div class="g-col-8">
-<p>Our project aims to develop a tool that will enable prospective renters, newcomers, tourists, and others to comprehensively understand what different Philadelphia neighborhoods have to offer. By using Zillow and Yelp data, we will leverage the most up-to-date amenity data as well as local knowledge about the most valued amenities in each neighborhood. This tool will allow us to highlight neighborhood assets rather than ranking neighborhoods against each other, and showcase the best amenities each neighborhood has to offer.</p>
-<p>Feel free to add more context!</p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>This template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project.</p>
+</div>
+</div>
+</section>
+<section id="find-out-more" class="level2">
+<h2 class="anchored" data-anchor-id="find-out-more">Find out more</h2>
+<p>The code for this repository is hosted on our course’s GitHub page: <a href="https://github.com/MUSA-550-Fall-2023/quarto-website-template">https://github.com/MUSA-550-Fall-2023/quarto-website-template</a>.</p>
+<p>We covered the basics of getting started with Quarto and GitHub Pages in week 9. Take a look at <a href="https://musa-550-fall-2023.github.io/content/week-9/lecture-9A.html">the slides for lecture 9A</a> to find out more.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -432,7 +459,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© CC-Anna Duan, Trevor Kapuvari, &amp; Timothy Oliver, 2023</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/about.qmd" class="toc-action">View source</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
