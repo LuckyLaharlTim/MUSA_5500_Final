@@ -9,7 +9,7 @@
 ### Rendering the website through Quarto
 
 <!-- with docs/ removed from .gitignore, the normal flow works now -->
-<!-->
+<!--
 *   Open the miniforge prompt and navigate just outside the MUSA_5500_Final repository folder 
 
 *   Copy and paste the following code block to move problematic top-level files out and render in one go
@@ -28,7 +28,7 @@ or in Linux:
 *   When we find out how to make quarto bypass executing certain markdowns and tell github how to specify landing page, `quarto render .` should suffice
 
     * there might be errors with the windows side
-    -->
+-->
  
 *   Open the miniforge prompt and navigate to the MUSA_5500_Final repository folder 
 
