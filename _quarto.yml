@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: website_docs
+  output-dir: docs
   preview:
     port: 3333
 
