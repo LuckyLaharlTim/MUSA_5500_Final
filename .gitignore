@@ -182,6 +182,7 @@ cython_debug/
 
 # RStudio files
 .Rproj.user/
+.Rproj.user/*
 
 # produced vignettes
 vignettes/*.html
@@ -209,5 +210,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Quarto
+/.quarto/
+
 
 
