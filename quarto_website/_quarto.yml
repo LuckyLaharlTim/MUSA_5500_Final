@@ -5,14 +5,14 @@ project:
     port: 3333
 
 website:
-  title: "MUSA 550 Quarto Template"
-  site-url: "https://LuckyLaharlTim.github.io/quarto_website_template" 
-  repo-url: https://github.com/LuckyLaharlTim/quarto_website_template.git 
+  title: "Finding Commercial Corridors in Philadelphia"
+  site-url: "https://luckylaharltim.github.io/MUSA_5500_Final/" 
+  repo-url: https://github.com/LuckyLaharlTim/MUSA_5500_Final.git 
   repo-actions: [source]
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-Nick Hand, 2023"
+    left: "&copy; CC-Anna Duan, Trevor Kapuvari, & Timothy Oliver, 2023"
 
   sidebar:
     logo: "images/course-icon.png"
@@ -20,14 +20,14 @@ website:
     align: center
     tools: 
       - icon: globe
-        href: https://nickhand.dev
-        text: "Personal Website"
+        href: https://www.pha.phila.gov/housing/housing-choice-voucher/
+        text: "Philadelphia Housing Authority - Housing Choice Vouchers"
       - icon: github
-        href: https://github.com/MUSA-550-Fall-2023/
-        text: "MUSA 550 GitHub"
-      - icon: twitter
+        href: https://github.com/LuckyLaharlTim/MUSA_5500_Final
+        text: "Analysis Project GitHub"
+      - icon: spotify
         href: https://twitter.com/nicholashand
-        text: "Nick Hand Twitter"         
+        text: "Other Social Media --CHANGE ICON AND LINK"         
 
     style: "docked"
     search: true
@@ -42,6 +42,7 @@ website:
           - analysis/2-static-images.ipynb
           - analysis/3-altair-hvplot.ipynb
           - analysis/4-folium.ipynb
+          # - analysis/5-yelp_explore.ipynb
 
 format:
   html:

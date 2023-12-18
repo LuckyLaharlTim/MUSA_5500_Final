@@ -1,6 +1,19 @@
 # Analysis
 
-This section includes examples of technical analysis done using Jupyter notebooks.
+This section...
+
+<!-- start of recommended new text -->
+
+shares findings of our cluster analysis with respect to specific amenity types. 
+One sub-section might focus on groceries and includes visualizations on which neighborhoods offer more delis than elsewhere or 
+which what distinct neighborhoods have a larger proportion of produce.
+
+### Feel Free to share general information about analysis here
+#### old text below
+
+
+<!-- OLD TEXT -->
+includes examples of technical analysis done using Jupyter notebooks.
 Each sub-section highlights different types of analyses and visualizations.
 In particular, it highlights that we can easily publish interactive visualizations
 produced with packages such as hvPlot, altair, or Folium, without losing

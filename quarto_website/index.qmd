@@ -1,8 +1,10 @@
 ---
-title: "Learning Quarto"
-subtitle: "An example website demonstrating the power of Quarto for sharing analyses on the web"
+title: "Default page is in index.qmd"
+subtitle: "Showing What Philadelphia Neghborhoods Offer"
 ---
 
+<!-- start the markdown section for writing -->
+<!-- I recommend playing around in design with the index.qmd to make the story page Anna recommended. -->
 ## Welcome!
 
 We can create beautiful websites that describe complex technical analyses in Python using [Quarto](https://quarto.org) 
