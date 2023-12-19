@@ -1,0 +1,44 @@
+---
+title: "Methods"
+---
+
+<!-- Use a grid -->
+::: {.grid}
+
+<!-- Left column has a width of 4/12 and shows a picture of me -->
+::: {.g-col-4}
+![](images/amenitywordcloud.jpg){width=6in}
+:::
+
+<!-- Text gets a column with width 8/12 -->
+::: {.g-col-8}
+
+The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. 
+<br> </br>
+The data was acquired from a mix of Zillow web-scraping and Yelp Fusion API. 
+Zillow provided a complete list of amenities mentioned by realtors, which identifies which amenities are most often listed and in turn, most desired.
+This first set coalesces with Yelp API data that identifies all existing amenities in each neighborhood and functions as a cross-reference with Zillow. Each amenity was under a broad category that provides an overview of how each was classified such as parks, restaurants, education, healthcare, etc. It is important to note that many amenities had multiple classifications due to their versatility and function. For instance, many bars & clubs were categorized as both entertainment & nightlife. These categories alone would not depict the variation of each amenity, so we leveraged the “alias” tags associated with each place of interest. These alias descriptions allow users to find niched neighborhood features that would otherwise be broadly classified as, for example “restaurants” or “parks”. This reclassification process results in broad categories and specific subcategories for each desired finding. We repeated this process for all of the following broad categories:
+<br> </br>
+<ul>
+  <li>Food</li>
+  <li>Parks</li>
+  <li>Education</li>
+  <li>Grocery</li>
+  <li>Entertainment</li>
+  <li>Nightlife</li>
+  <li>Shopping</li>
+  <li>Healthcare</li>
+  <li>Historic</li>
+  <li>Art</li>
+  <li>Beauty</li>
+  <li>Kid-Friendly</li>
+</ul>
+
+With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific. 
+
+![](images/elbowat9.jpg)
+
+
+::: 
+
+:::
