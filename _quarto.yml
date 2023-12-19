@@ -15,19 +15,26 @@ website:
     left: "&copy; CC-Anna Duan, Trevor Kapuvari, & Timothy Oliver, 2023"
 
   sidebar:
-    logo: "images/pha_logo.jpg"
+    logo: "images/hip_logo.png"
     pinned: true
     align: center
     tools: 
-      - icon: globe
-        href: https://www.pha.phila.gov/housing/housing-choice-voucher/
-        text: "Philadelphia Housing Authority - Housing Choice Vouchers"
       - icon: github
         href: https://github.com/LuckyLaharlTim/MUSA_5500_Final
         text: "Analysis Project GitHub"
-      - icon: twitter
-        href: https://twitter.com/nicholashand
-        text: "Other Social Media --CHANGE ICON AND LINK"         
+      - icon: github
+        href: https://github.com/annaduan09
+        text: "Anna Duan Github Profile" 
+      - icon: github
+        href: https://github.com/TrevorKap
+        text: "Trevor Kapuvari Github Profile" 
+      - icon: github
+        href: https://github.com/LuckyLaharlTim
+        text: "Timothy Oliver Github Profile" 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/timoliver200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM4Ej%2F58xQdy7qwIFEM3FFw%3D%3D
+        text: "Some Linked In" 
+
 
     style: "docked"
     search: true
