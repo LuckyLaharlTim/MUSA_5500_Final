@@ -12,13 +12,13 @@ title: "Methods"
 
 <!-- Text gets a column with width 8/12 -->
 ::: {.g-col-8}
-
-#INTRODUCTION PARAGRAPH 
+ 
+# Our Project 
 
 The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. 
 <br> </br>
 
-#DATA ACQUISITION AND WRANGLING PARAGRAPH
+# Data Acqusition and Formattiing
 
 The data was acquired from a mix of Zillow web-scraping and Yelp Fusion API. 
 Zillow provided a complete list of amenities mentioned by realtors, which identifies which amenities are most often listed and in turn, most desired.
@@ -39,7 +39,8 @@ This first set coalesces with Yelp API data that identifies all existing ameniti
   <li>Kid-Friendly</li>
 </ul>
 
-# CLUSTER ANALYSIS PARAGRAPH 
+# Cluster Analysis  
+
 With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific. 
 
 ![](images/elbowpython.jpg)
