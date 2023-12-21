@@ -1,5 +1,5 @@
 ---
-title: "About the Project"
+title: "About this Project"
 ---
 
 <!-- Use a grid -->
@@ -13,11 +13,18 @@ title: "About the Project"
 <!-- Text gets a column with width 8/12 -->
 ::: {.g-col-8}
 
-Our project aims to develop a tool that will enable prospective renters, newcomers, tourists, and others to comprehensively understand what different Philadelphia neighborhoods have to offer. 
-By using Zillow and Yelp data, we will leverage the most up-to-date amenity data as well as local knowledge about the most valued amenities in each neighborhood. 
-This tool will allow us to highlight neighborhood assets rather than ranking neighborhoods against each other, and showcase the best amenities each neighborhood has to offer.
-The showcase in this data will result in an interactive map series that allows users to explore the variation of amenity profiles throughout the city neighborhoods. 
-Users will be able to select their amenity of interest through a wide variety of categories, broad and specific, and learn where they are located citywide. 
+Our project aims to develop a tool that will enable residents, newcomers, visiters, and others to explore the amenities available in neighborhoods around the city. 
+
+Using Yelp and Zillow data, we collected up-to-date information on a wide range of amenities throughout Philadelphia. Using data visualization and analysis, we prototyped a guide to Philadelphia's amenities as well as a set of neighborhood typologies based on their amenity profiles. In our analysis, we focus on differentiating neighborhoods based on their unique assets rather than comparing neighborhoods based on the raw counts of businesses available.
+
+In this analysis, we seek to answer the following questions:
+
+- What is the amenity landscape in Philadelphia like, beyond the downtown area?
+- How much variation is there within amenity categories, such as restaurants?
+- What are common neighborhood amenity typologies?
+- How can residents use this knowledge to inform their residential decision making?
+
+This novel dataset and analysis has the potential to help not just prospective residents and visitors, but has far-reaching applications in planning, policy, and research. 
 <br>
 </br>
 Contacts: Anna Duan (email linkedin), Trevor Kapuvari(email linkedin), Timothy Oliver(email linkedin)

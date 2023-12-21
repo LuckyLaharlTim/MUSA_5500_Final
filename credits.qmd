@@ -1,10 +1,10 @@
-# Credits 
+# Acknowledgements
 <ul>
-  <li> Nick Hand </li>
-  <li> Elizabeth Delmelle</li>
+  <li> Dr. Nick Hand </li>
+  <li> Dr. Sara Jacoby </li>
+  <li> Dr. Elizabeth Delmelle</li>
+  <li> Providence Adu </li> 
   <li> Housing Initiative at Penn  </li>
   <li> Penn Injury Science Center  </li>
-  <li> Sara Jacoby </li>
-  <li> Providence Adu </li> 
   
 </ul>
