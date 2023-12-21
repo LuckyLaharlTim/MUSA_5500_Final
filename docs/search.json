@@ -578,14 +578,14 @@
     "href": "index.html",
     "title": "Default page is in index.qmd",
     "section": "",
-    "text": "Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents. For instance, parks and greenspaces are valued differently in each neighborhood and vary in quality, yet OpenDataPhilly.org lists all parks managed by Parks and Recreation without the additional insight on quality and community feedback. Combining the pre-existing nuance between what is listed versus what is valued, exacterbated by the pandemic, we have developed a tool that creates a comprehensive frame of each neighborhood in Philadelphia. Ultimately, this tool will serve as a way of uplifting neighborhoods by displaying their most valued assets and showcasing the lifestyle and features they have to offer.\n\n\n\n\n\n\nImportant\n\n\n\nThis template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project."
+    "text": "Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents. For instance, parks and greenspaces are valued differently in each neighborhood and vary in quality, yet OpenDataPhilly.org lists all parks managed by Parks and Recreation without the additional insight on quality and community feedback. Combining the pre-existing nuance between what is listed versus what is valued, exacterbated by the pandemic, we have developed a tool that creates a comprehensive frame of each neighborhood in Philadelphia. Ultimately, this tool will serve as a way of uplifting neighborhoods by displaying their most valued assets and showcasing the lifestyle and features they have to offer."
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Default page is in index.qmd",
     "section": "",
-    "text": "Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents. For instance, parks and greenspaces are valued differently in each neighborhood and vary in quality, yet OpenDataPhilly.org lists all parks managed by Parks and Recreation without the additional insight on quality and community feedback. Combining the pre-existing nuance between what is listed versus what is valued, exacterbated by the pandemic, we have developed a tool that creates a comprehensive frame of each neighborhood in Philadelphia. Ultimately, this tool will serve as a way of uplifting neighborhoods by displaying their most valued assets and showcasing the lifestyle and features they have to offer.\n\n\n\n\n\n\nImportant\n\n\n\nThis template site, including the layout it uses, is just a suggested place to start! For your final project, you’re welcome (and encouraged) to make as many changes as you like to best fit your project."
+    "text": "Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents. For instance, parks and greenspaces are valued differently in each neighborhood and vary in quality, yet OpenDataPhilly.org lists all parks managed by Parks and Recreation without the additional insight on quality and community feedback. Combining the pre-existing nuance between what is listed versus what is valued, exacterbated by the pandemic, we have developed a tool that creates a comprehensive frame of each neighborhood in Philadelphia. Ultimately, this tool will serve as a way of uplifting neighborhoods by displaying their most valued assets and showcasing the lifestyle and features they have to offer."
   },
   {
     "objectID": "index.html#find-out-more",
@@ -593,5 +593,12 @@
     "title": "Default page is in index.qmd",
     "section": "Find out more",
     "text": "Find out more\nThe code for this repository is hosted on our course’s GitHub page: https://github.com/MUSA-550-Fall-2023/quarto-website-template.\nWe covered the basics of getting started with Quarto and GitHub Pages in week 9. Take a look at the slides for lecture 9A to find out more."
+  },
+  {
+    "objectID": "credits.html",
+    "href": "credits.html",
+    "title": "Credits",
+    "section": "",
+    "text": "Credits\n\n\nNick Hand\n\n\nElizabeth Delmelle\n\n\nHousing Initiative at Penn\n\n\nPenn Injury Science Center\n\n\nSara Jacoby\n\n\nProvidence Adu"
   }
 ]
