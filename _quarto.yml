@@ -52,6 +52,7 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
+          - data_prep.ipynb
           - exploratory.ipynb
 
 
