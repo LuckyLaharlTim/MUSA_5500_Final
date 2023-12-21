@@ -2,134 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/yelp clean and explore.html</loc>
-    <lastmod>2023-12-19T21:33:02.982Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/index.html</loc>
-    <lastmod>2023-12-19T21:41:53.055Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:34:07.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/RentalExclusionaryCriteria/Webscraping Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:34:06.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/RentalExclusionaryCriteria/Merged Cleaned Zillow and Craiglist Data.html</loc>
-    <lastmod>2023-12-19T20:34:05.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/RentalExclusionaryCriteria/Cleaning Web Scraped Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:34:04.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Merged Cleaned Zillow and Craiglist Data.html</loc>
-    <lastmod>2023-12-19T20:34:03.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:34:02.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:34:00.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Merged Cleaned Zillow and Craiglist Data.html</loc>
-    <lastmod>2023-12-19T20:33:59.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:33:58.040Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/index.html</loc>
-    <lastmod>2023-12-19T20:33:56.341Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/6-something.html</loc>
-    <lastmod>2023-12-19T20:33:55.400Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/4-folium.html</loc>
-    <lastmod>2023-12-19T20:31:06.059Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/2-static-images.html</loc>
-    <lastmod>2023-12-19T20:31:04.481Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/about.html</loc>
-    <lastmod>2023-12-19T20:30:54.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/1-python-code-blocks.html</loc>
-    <lastmod>2023-12-19T20:31:03.806Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/3-altair-hvplot.html</loc>
-    <lastmod>2023-12-19T20:31:05.370Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/5-yelp_clean_and_explore.html</loc>
-    <lastmod>2023-12-19T21:51:56.767Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/index.html</loc>
-    <lastmod>2023-12-19T20:33:55.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/references.html</loc>
-    <lastmod>2023-12-19T20:33:56.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:33:58.545Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/text_analysis.html</loc>
-    <lastmod>2023-12-19T20:33:59.647Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:34:01.256Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:34:02.709Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/reference.html</loc>
-    <lastmod>2023-12-19T20:34:03.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/RentalExclusionaryCriteria/Cleaning Web Scraped Zillow Data.html</loc>
-    <lastmod>2023-12-19T20:34:05.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/RentalExclusionaryCriteria/Webscraping Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:34:06.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Craigslist Data.html</loc>
-    <lastmod>2023-12-19T20:34:07.249Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/Yelp API/Philly amenity guide.html</loc>
-    <lastmod>2023-12-19T20:34:08.163Z</lastmod>
-  </url>
-  <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/Philly amenity guide.html</loc>
-    <lastmod>2023-12-19T20:34:09.902Z</lastmod>
+    <lastmod>2023-12-21T00:13:17.643Z</lastmod>
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/exploratory.html</loc>
-    <lastmod>2023-12-19T21:41:52.226Z</lastmod>
+    <lastmod>2023-12-21T00:13:10.838Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Zillow Data.html</loc>
+    <lastmod>2023-12-21T00:13:07.741Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/reference.html</loc>
+    <lastmod>2023-12-21T00:13:06.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Zillow Data.html</loc>
+    <lastmod>2023-12-21T00:13:05.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Zillow Data.html</loc>
+    <lastmod>2023-12-21T00:13:03.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/text_analysis.html</loc>
+    <lastmod>2023-12-21T00:13:02.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Zillow Data.html</loc>
+    <lastmod>2023-12-21T00:13:00.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/references.html</loc>
+    <lastmod>2023-12-21T00:12:59.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/results.html</loc>
+    <lastmod>2023-12-21T00:12:57.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/index.html</loc>
+    <lastmod>2023-12-21T00:12:56.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/5-yelp_clean_and_explore.html</loc>
+    <lastmod>2023-12-21T00:20:18.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/3-altair-hvplot.html</loc>
+    <lastmod>2023-12-21T00:11:00.133Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/1-python-code-blocks.html</loc>
+    <lastmod>2023-12-21T00:10:58.325Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/about.html</loc>
+    <lastmod>2023-12-21T00:10:47.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/2-static-images.html</loc>
+    <lastmod>2023-12-21T00:10:59.110Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/4-folium.html</loc>
+    <lastmod>2023-12-21T00:11:00.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/6-something.html</loc>
+    <lastmod>2023-12-21T00:12:56.110Z</lastmod>
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/methods.html</loc>
-    <lastmod>2023-12-19T21:42:07.783Z</lastmod>
+    <lastmod>2023-12-21T00:12:57.376Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/index.html</loc>
+    <lastmod>2023-12-21T00:12:58.561Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Craigslist Data.html</loc>
+    <lastmod>2023-12-21T00:13:00.130Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Merged Cleaned Zillow and Craiglist Data.html</loc>
+    <lastmod>2023-12-21T00:13:01.437Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Craigslist Data.html</loc>
+    <lastmod>2023-12-21T00:13:02.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Craigslist Data.html</loc>
+    <lastmod>2023-12-21T00:13:04.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Merged Cleaned Zillow and Craiglist Data.html</loc>
+    <lastmod>2023-12-21T00:13:05.679Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Craigslist Data.html</loc>
+    <lastmod>2023-12-21T00:13:07.092Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/Yelp API/Philly amenity guide.html</loc>
+    <lastmod>2023-12-21T00:13:08.368Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/index.html</loc>
+    <lastmod>2023-12-21T00:18:00.114Z</lastmod>
   </url>
 </urlset>

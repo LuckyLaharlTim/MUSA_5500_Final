@@ -52,6 +52,7 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
+          - exploratory.ipynb
           - analysis/5-yelp_clean_and_explore.ipynb
           - analysis/results.qmd
 
