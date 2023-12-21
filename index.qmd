@@ -1,6 +1,6 @@
 ---
-title: "Showing What Philadelphia Neghborhoods Offer"
-subtitle: "Amenity Gathering and Analysis"
+title: "Exploring Philly's Amenity Landscape"
+subtitle: "Using Yelp Fusion API and Web-scraping to create neighborhood amenity profiles"
 ---
 
 ## Welcome!
