@@ -42,10 +42,11 @@ This first set coalesces with Yelp API data that identifies all existing ameniti
 # Cluster Analysis  
 
 With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific. 
-::: 
-![](images/elbowat9.jpg){width=10in}
+
+:::{.g-col-20}
+
+![](images/elbowpython.jpg){width=10in}
 
 
 ::: 
 
-:::

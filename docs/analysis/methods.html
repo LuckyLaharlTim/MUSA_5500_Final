@@ -181,7 +181,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#our-project" id="toc-our-project" class="nav-link active" data-scroll-target="#our-project">Our Project</a></li>
+  <li><a href="#data-acqusition-and-formattiing" id="toc-data-acqusition-and-formattiing" class="nav-link" data-scroll-target="#data-acqusition-and-formattiing">Data Acqusition and Formattiing</a></li>
+  <li><a href="#cluster-analysis" id="toc-cluster-analysis" class="nav-link" data-scroll-target="#cluster-analysis">Cluster Analysis</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -204,13 +212,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <!-- Use a grid -->
-<div class="grid">
+<p>::: {.grid}</p>
 <!-- Left column has a width of 4/12 and shows a picture of me -->
 <div class="g-col-4">
 <p><img src="images/amenitywordcloud.jpg" class="img-fluid" style="width:6in"></p>
 </div>
 <!-- Text gets a column with width 8/12 -->
-<div class="g-col-8">
+<p>::: {.g-col-8}</p>
 <section id="our-project" class="level1">
 <h1>Our Project</h1>
 <p>The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. <br> <br></p>
@@ -260,13 +268,12 @@ Kid-Friendly
 <section id="cluster-analysis" class="level1">
 <h1>Cluster Analysis</h1>
 <p>With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific.</p>
+<div class="g-col-20">
+<p><img src="images/elbowpython.jpg" class="img-fluid" style="width:10in"></p>
+</div>
+
+
 </section>
-</div>
-<p><img src="images/elbowat9.jpg" class="img-fluid" style="width:10in"></p>
-</div>
-<p>:::</p>
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -508,7 +515,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© CC-Anna Duan, Trevor Kapuvari, &amp; Timothy Oliver, 2023</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
