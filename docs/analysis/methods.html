@@ -152,12 +152,15 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exploratory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploring Philly’s Amenity Landscape</span></a>
+ <span class="menu-text">Philly’s Amenity Landscape</span></a>
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">yelp_clean_and_explore.ipynb</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../yelp_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning &amp; Exploratory Analysis</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../analysis/Limitations.html" class="sidebar-item-text sidebar-link">
@@ -257,10 +260,11 @@ Kid-Friendly
 <section id="cluster-analysis" class="level1">
 <h1>Cluster Analysis</h1>
 <p>With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific.</p>
-<p><img src="images/elbowpython.jpg" class="img-fluid"></p>
 </section>
 </div>
+<p><img src="images/elbowat9.jpg" class="img-fluid" style="width:10in"></p>
 </div>
+<p>:::</p>
 
 
 

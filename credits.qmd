@@ -1,22 +1,10 @@
 # Credits 
 <ul>
   <li> Nick Hand </li>
-  <ul>
-      <li> Geospatial Python Professor, direction and analysis</li>
-  </ul>
- 
- 
   <li> Elizabeth Delmelle</li>
-    <ul>
-      <li> Program Director, sellenium web-scrapping</li>
-  </ul>
-  
   <li> Housing Initiative at Penn  </li>
-  
   <li> Penn Injury Science Center  </li>
-  
   <li> Sara Jacoby </li>
-  
   <li> Providence Adu </li> 
   
 </ul>
