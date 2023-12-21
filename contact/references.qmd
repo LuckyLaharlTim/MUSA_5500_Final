@@ -1,15 +1,16 @@
 # Project References
 
-### Feel Free to put this in the `Contact Us` page instead
-
-<ins>References (and maybe how they helped) below:</ins>
-
-<br></br>
-**Name**
-
-*   *Contact Info Piece*
-
-*   *How They Helped*
+<ins> Special Thanks to:</ins>
 
 
+
+<ul>
+  <li> Nick Hand </li>
+  <li> Elizabeth Delmelle</li>
+  <li> Housing Initiative at Penn  </li>
+  <li> Penn Injury Science Center  </li>
+  <li> Sara Jacoby </li>
+  <li> Providence Adu </li> 
+  
+</ul>
 

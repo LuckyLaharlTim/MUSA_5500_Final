@@ -1,6 +1,6 @@
 ---
-title: "Default page is in index.qmd"
-subtitle: "Showing What Philadelphia Neghborhoods Offer"
+title: "Showing What Philadelphia Neghborhoods Offer"
+subtitle: "Amenity Gathering and Analysis"
 ---
 
 <!-- start the markdown section for writing -->

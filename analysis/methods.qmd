@@ -5,7 +5,9 @@ title: "Methods"
  
 # Our Project 
 
-The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. 
+
+This project proposes a set of neighborhood typologies through the lens of amenities available to residents. The aim of this analysis is to provide an up-to-date profile of the amenities available citywide to inform planning, research, and residents and tourists’ understanding of the city. 
+
 <br> </br>
 
 # Data Acqusition and Formattiing

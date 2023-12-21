@@ -20,8 +20,6 @@ The showcase in this data will result in an interactive map series that allows u
 Users will be able to select their amenity of interest through a wide variety of categories, broad and specific, and learn where they are located citywide. 
 <br>
 </br>
-Contacts: Anna Duan (email linkedin), Trevor Kapuvari(email linkedin), Timothy Oliver(email linkedin)
-
 
 
 ::: 
