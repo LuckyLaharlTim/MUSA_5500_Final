@@ -2,9 +2,5 @@
 title: "Limitations"
 ---
 
+There are five major limitations to our data acquisition and exploratory analysis. Yelp data gathered is created by people at least 35 years old or greater. As of 2023, only 25% of users were between the ages of 18-34, leaving a disproportionate amount to be underrepresented and a potential skew in amenities identified that cater to an older audience. When formating the data, many businesses recognized in the Yelp dataset were placed in multiple categories beyond their primary purpose. Businesses with multiple goods and services were accounted for and assorted accordingly, but many also were featured in categories where it stretches the definition of the business’s role in the community. Therefore we had to narrow the scope to only include amenities of their most identifiable purposes. In addition to the fluidity of the data and its real-time input by users, this makes Yelp an unofficial data source that also can identify unofficial business with no defined location, such as food trucks. Beyond the unofficial businesses, the aliases used to identify the specific categories of businesses had limitations in terms of describing each amenity and required the use of second or third aliases to define them in greater detail. Despite the multiple layers of alias descriptions, not all amenities had decisive identification and required manual inferencing in their respective category. Lastly, as with any city’s neighborhood, these are unofficial borders defined by residents and people of a city, and these defined borders in our dataset may not be useful in the future.  
 
-
-The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. 
-<br> </br>
-The data was acquired from a mix of Zillow web-scraping and Yelp Fusion API. 
-Zillow prov
