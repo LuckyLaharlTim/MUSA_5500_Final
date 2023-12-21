@@ -8,17 +8,3 @@
 This section focuses on the process in acquiring, formatting, and examining the data gather from our analysis. Here we look at the methods in acquiring the data, the experimentation through the data cleaning process, and the results found after visualizing the data onto Philadelphia. 
 <br> </br> 
 
-Here are the main results: 
-
-Documents/GitHub/MUSA_5500_Final/images/topamenitties.png
-
-
-
-
-
-Documents/GitHub/MUSA_5500_Final/images/densityofamenities.png
-
-
-
-Documents/GitHub/MUSA_5500_Final/images/top10restuarants.png
-
