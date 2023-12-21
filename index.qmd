@@ -1,11 +1,7 @@
 ---
-<<<<<<< HEAD
-title: "Default page is in index.qmd"
-subtitle: "Exploring Philadelphia's Amenity Landscape"
-=======
 title: "Showing What Philadelphia Neghborhoods Offer"
 subtitle: "Amenity Gathering and Analysis"
->>>>>>> 5ad8e204083b2a572c6bbd27a0a2565886c04a4e
+
 ---
 
 <!-- start the markdown section for writing -->
