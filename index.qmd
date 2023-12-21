@@ -1,15 +1,7 @@
 ---
-<<<<<<< HEAD
-title: "Default page is in index.qmd"
-subtitle: "Exploring Philadelphia's Amenity Landscape"
-=======
 title: "Showing What Philadelphia Neghborhoods Offer"
 subtitle: "Amenity Gathering and Analysis"
->>>>>>> 5ad8e204083b2a572c6bbd27a0a2565886c04a4e
----
 
-<!-- start the markdown section for writing -->
-<!-- I recommend playing around in design with the index.qmd to make the story page Anna recommended. -->
 ## Welcome!
 
 Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents.
