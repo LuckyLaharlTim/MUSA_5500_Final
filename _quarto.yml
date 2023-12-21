@@ -53,7 +53,7 @@ website:
         contents:
           - analysis/methods.qmd
           - exploratory.ipynb
-          - Yelp_Explortatory.ipynb
+          - yelp_data.ipynb
           - analysis/Limitations.qmd
           - credits.qmd
 
