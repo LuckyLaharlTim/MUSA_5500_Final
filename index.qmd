@@ -1,6 +1,7 @@
 ---
 title: "Showing What Philadelphia Neghborhoods Offer"
 subtitle: "Amenity Gathering and Analysis"
+---
 
 ## Welcome!
 
