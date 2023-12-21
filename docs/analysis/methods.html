@@ -93,7 +93,8 @@ ul.task-list li input[type="checkbox"] {
     <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final" rel="" title="Analysis Project GitHub" class="quarto-navigation-tool px-1" aria-label="Analysis Project GitHub"><i class="bi bi-github"></i></a>
     <a href="https://github.com/annaduan09" rel="" title="Anna Duan Github Profile" class="quarto-navigation-tool px-1" aria-label="Anna Duan Github Profile"><i class="bi bi-github"></i></a>
     <a href="https://github.com/TrevorKap" rel="" title="Trevor Kapuvari Github Profile" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari Github Profile"><i class="bi bi-github"></i></a>
-    <a href="https://github.com/LuckyLaharlTim" rel="" title="Timothy Oliver Github Profile" class="quarto-navigation-tool px-1" aria-label="Timothy Oliver Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/trevor-kapuvari-a25876253/" rel="" title="Trevor Kapuvari LinkedIn" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari LinkedIn"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/LuckyLaharlTim" rel="" title="Timothy Oliver Github Profile" class="quarto-navigation-tool px-1" aria-label="Timothy Oliver Github Profile"><i class="bi bi-linkedin"></i></a>
     <a href="https://www.linkedin.com/in/timoliver200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM4Ej%2F58xQdy7qwIFEM3FFw%3D%3D" rel="" title="Some Linked In" class="quarto-navigation-tool px-1" aria-label="Some Linked In"><i class="bi bi-linkedin"></i></a>
 </div>
       </div>
@@ -150,14 +151,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../analysis/5-yelp_clean_and_explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Yelp Amenity Data cleaning and exploratory analysis</span></a>
+  <a href="../exploratory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Philly’s Amenity Landscape</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../analysis/results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Results</span></a>
+  <a href="../yelp_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning &amp; Exploratory Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../analysis/Limitations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Limitations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Credits</span></a>
   </div>
 </li>
       </ul>
@@ -168,7 +181,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#our-project" id="toc-our-project" class="nav-link active" data-scroll-target="#our-project">Our Project</a></li>
+  <li><a href="#data-acqusition-and-formattiing" id="toc-data-acqusition-and-formattiing" class="nav-link" data-scroll-target="#data-acqusition-and-formattiing">Data Acqusition and Formattiing</a></li>
+  <li><a href="#cluster-analysis" id="toc-cluster-analysis" class="nav-link" data-scroll-target="#cluster-analysis">Cluster Analysis</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -190,15 +211,13 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- Use a grid -->
-<div class="grid">
-<!-- Left column has a width of 4/12 and shows a picture of me -->
-<div class="g-col-4">
-<p><img src="images/amenitywordcloud.jpg" class="img-fluid" style="width:6in"></p>
-</div>
-<!-- Text gets a column with width 8/12 -->
-<div class="g-col-8">
-The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. <br> <br> The data was acquired from a mix of Zillow web-scraping and Yelp Fusion API. Zillow provided a complete list of amenities mentioned by realtors, which identifies which amenities are most often listed and in turn, most desired. This first set coalesces with Yelp API data that identifies all existing amenities in each neighborhood and functions as a cross-reference with Zillow. Each amenity was under a broad category that provides an overview of how each was classified such as parks, restaurants, education, healthcare, etc. It is important to note that many amenities had multiple classifications due to their versatility and function. For instance, many bars &amp; clubs were categorized as both entertainment &amp; nightlife. These categories alone would not depict the variation of each amenity, so we leveraged the “alias” tags associated with each place of interest. These alias descriptions allow users to find niched neighborhood features that would otherwise be broadly classified as, for example “restaurants” or “parks”. This reclassification process results in broad categories and specific subcategories for each desired finding. We repeated this process for all of the following broad categories: <br> <br>
+<section id="our-project" class="level1">
+<h1>Our Project</h1>
+<p>The project focuses on amenities through the lens of realtors and their advertising of neighborhood features, existing amenities in these neighborhoods, and the discrepancy in values across the city. <br> <br></p>
+</section>
+<section id="data-acqusition-and-formattiing" class="level1">
+<h1>Data Acqusition and Formattiing</h1>
+The data was acquired from a mix of Zillow web-scraping and Yelp Fusion API. Zillow provided a complete list of amenities mentioned by realtors, which identifies which amenities are most often listed and in turn, most desired. This first set coalesces with Yelp API data that identifies all existing amenities in each neighborhood and functions as a cross-reference with Zillow. Each amenity was under a broad category that provides an overview of how each was classified, such as parks, restaurants, education, healthcare, etc. It is important to note that many amenities had multiple classifications due to their versatility and function. For instance, many bars &amp; clubs were categorized as both entertainment &amp; nightlife. These categories alone would not depict the variation of each amenity, so we leveraged the “alias” tags associated with each place of interest. These alias descriptions allow users to find niched neighborhood features that would otherwise be broadly classified as, for example “restaurants” or “parks”. This reclassification process results in broad categories and specific subcategories for each desired finding. We repeated this process for all of the following broad categories: <br> <br>
 <ul>
 <li>
 Food
@@ -237,12 +256,14 @@ Beauty
 Kid-Friendly
 </li>
 </ul>
+</section>
+<section id="cluster-analysis" class="level1">
+<h1>Cluster Analysis</h1>
 <p>With all amenities having a category and subcategory description, we could now compare each neighborhood on their unique features in detail to any level of specificity desired by the user. We can also examine the clusters of each composition of amenities to each neighborhood/census tract. Using k-means clustering we discovered similarities in amenity composition on the broad and sub-categorical level. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis (shown below). From there we conducted a cluster-analysis on various categories, broad and specific.</p>
-<p><img src="images/elbowat9.jpg" class="img-fluid"></p>
-</div>
-</div>
+<p><img src="https://github.com/LuckyLaharlTim/MUSA_5500_Final/main/images/eblowpython.jpg"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -484,7 +505,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© CC-Anna Duan, Trevor Kapuvari, &amp; Timothy Oliver, 2023</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

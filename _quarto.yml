@@ -28,10 +28,10 @@ website:
       - icon: github
         href: https://github.com/TrevorKap
         text: "Trevor Kapuvari Github Profile" 
-      - icon: github
+      - icon: linkedin
         href: https://www.linkedin.com/in/trevor-kapuvari-a25876253/
         text: "Trevor Kapuvari LinkedIn"
-      - icon: linkedin
+      - icon: github
         href: https://github.com/LuckyLaharlTim
         text: "Timothy Oliver Github Profile" 
       - icon: linkedin
@@ -52,8 +52,10 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
-          - analysis/5-yelp_clean_and_explore.ipynb
-          - analysis/results.qmd
+          - exploratory.ipynb
+          - yelp_data.ipynb
+          - analysis/Limitations.qmd
+          - credits.qmd
 
 format:
   html:
