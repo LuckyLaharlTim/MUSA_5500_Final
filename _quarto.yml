@@ -54,7 +54,7 @@ website:
           - analysis/methods.qmd
           - exploratory.ipynb
           - analysis/5-yelp_clean_and_explore.ipynb
-          - analysis/results.qmd
+          - analysis/Limitations.qmd
 
 format:
   html:
