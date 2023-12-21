@@ -55,7 +55,7 @@ website:
           - exploratory.ipynb
           - yelp_data.ipynb
           - analysis/Limitations.qmd
-          - credits.qmd
+
 
 format:
   html:

@@ -1,24 +1,24 @@
 # Analysis
 
-This section...
 
 <!-- start of recommended new text -->
 
-shares findings of our cluster analysis with respect to specific amenity types. 
-One sub-section might focus on groceries and includes visualizations on which neighborhoods offer more delis than elsewhere or 
-which what distinct neighborhoods have a larger proportion of produce.
-
-### Feel Free to share general information about analysis here
-#### old text below
 
 
-<!-- OLD TEXT -->
-includes examples of technical analysis done using Jupyter notebooks.
-Each sub-section highlights different types of analyses and visualizations.
-In particular, it highlights that we can easily publish interactive visualizations
-produced with packages such as hvPlot, altair, or Folium, without losing
-any of the interactive features. 
+This section focuses on the process in acquiring, formatting, and examining the data gather from our analysis. Here we look at the methods in acquiring the data, the experimentation through the data cleaning process, and the results found after visualizing the data onto Philadelphia. 
+<br> </br> 
 
-On this page, you might want to share more introductory or background information about 
-the analyses to help guide the reader. 
+Here are the main results: 
+
+Documents/GitHub/MUSA_5500_Final/images/topamenitties.png
+
+
+
+
+
+Documents/GitHub/MUSA_5500_Final/images/densityofamenities.png
+
+
+
+Documents/GitHub/MUSA_5500_Final/images/top10restuarants.png
 
