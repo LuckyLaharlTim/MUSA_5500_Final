@@ -5,7 +5,7 @@ project:
     port: 3333
 
 website:
-  title: "Finding Commercial Corridors in Philadelphia"
+  title: "Exploring Philadelphia's Amenity Landscape"
   site-url: "https://luckylaharltim.github.io/MUSA_5500_Final/" 
   repo-url: https://github.com/LuckyLaharlTim/MUSA_5500_Final.git 
   repo-actions: [source]
