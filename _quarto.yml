@@ -53,7 +53,7 @@ website:
         contents:
           - analysis/methods.qmd
           - exploratory.ipynb
-          - analysis/Limitations.qmd
+
 
 
 format:
