@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   preview:
-    port: 3333
+    port: 4444
 
 website:
   title: "Exploring Philadelphia's Amenity Landscape"
