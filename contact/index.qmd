@@ -1,23 +1,26 @@
-# Meet the Team
+Meet the Team
+-------------
 
-We are a team of 3 graduate students in the <a href="https://www.design.upenn.edu/musa/about">Master of Urban Spatial Analytics program</a> at the University of Pennsylvania. This project was completed as our final project for <a href="https://musa-550-fall-2023.github.io/">MUSA550: Geospatial Data Science in Python</a>. To learn more about this <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final">project</a> or our other work, please reach out to our team below:
+We are a team of 3 graduate students in the [Master of Urban Spatial Analytics program](https://www.design.upenn.edu/musa/about) at the University of Pennsylvania. This project was completed as our final project for [MUSA550: Geospatial Data Science in Python](https://musa-550-fall-2023.github.io/). To learn more about this [project](https://github.com/LuckyLaharlTim/MUSA_5500_Final) or our other work, please reach out to our team below:
 
+<div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; text-align: center;">
 
-<img src="../images/AD.png" width="200px">
- 
-<strong>**Anna Duan, MUSA '25**</strong>
+<div style="margin: 10px; width: 200px;">
+  <img src="../images/AD.png" width="200px" style="margin-bottom: 10px;">
+  <div><strong>Anna Duan, MUSA '25</strong></div>
+  <div><a href="mailto:annaduan@sas.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a></div>
+</div>
 
-<a href="mailto:annaduan@sas.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a>
+<div style="margin: 10px; width: 200px;">
+  <img src="../images/TK.jpg" width="200px" style="margin-bottom: 10px;">
+  <div><strong>Trevor Kapuvari, MUSA '24</strong></div>
+  <div><a href="mailto:kapuvarit@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a></div>
+</div>
 
-<img src="../images/TK.jpg" width="200px">
+<div style="margin: 10px; width: 200px;">
+  <img src="../images/TO.jpg" width="200px" style="margin-bottom: 10px;">
+  <div><strong>Timothy Oliver, MUSA '24</strong></div>
+  <div><a href="mailto:toliv@design.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a></div>
+</div>
 
-<strong>**Trevor Kapuvari, MUSA '24**</strong>
-
-<a href="mailto:kapuvarit@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a>
-
-<img src="../images/TO.jpg" width="200px">
-
-<strong>**Timothy Oliver, MUSA '24**</strong>
-
-<a href="mailto:toliv@design.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a>
-
+</div>
