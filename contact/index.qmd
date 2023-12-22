@@ -1,31 +1,27 @@
-# Contact Us
+# Project Team
 
-If you'd like to find out more about the project or the [The Housing Initiative at Penn](https://www.housinginitiative.org/), 
-feel free to use the contacts below.
+We are a team of 3 graduate students in the <a href="https://www.design.upenn.edu/musa/about">Master of Urban Spatial Analytics program</a>  at the University of Pennsylvania. This project was completed as our final project for MUSA 5500, Geospatial Data Science in Python. To learn more about this <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final">project</a> or our other work, please reach out to our team below:
 
-<br></br>
-<ins>**Anna Duan**</ins>
+<strong>**Anna Duan**</strong>
 
-*   Email:
-    -   annaduan@sas.upenn.edu
+*   <a href="mailto:annaduan@sas.upenn.edu">Email</a>
 
 *   <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a>
 
-<ins>**Trevor Kapuvari**</ins>
+<strong>**Trevor Kapuvari**</strong>
 
 *   Email:
     -   kapuvari@design.upenn.edu
-    -   kapuvarit@gmail.com
+    -   [kapuvarit@gmail.com](mailto:kapuvarit@gmail.com)
 
 *   <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a>
 
-<ins>**Timothy Oliver**</ins>
+<strong>**Timothy Oliver**</strong>
 
 *   Email:
-    -   toliv@design.upenn.edu
-    -   timoliver200@gmail.com
+    -   [toliv@design.upenn.edu](mailto:toliv@design.upenn.edu)
+    -   [timoliver200@gmail.com](mailto:timoliver200@gmail.com)
 
 *   [LinkedIn](https://www.linkedin.com/in/timoliver200/)
-
 
 

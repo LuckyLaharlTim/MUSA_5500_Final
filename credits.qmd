@@ -1,5 +1,7 @@
 # Acknowledgements
 <ul>
+
+With appreciation to:  
   <li> Dr. Nick Hand </li>
   <li> Dr. Sara Jacoby </li>
   <li> Dr. Elizabeth Delmelle</li>
