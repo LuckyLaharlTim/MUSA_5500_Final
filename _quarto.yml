@@ -36,6 +36,7 @@ website:
           - analysis/data_prep.ipynb
           - analysis/exploratory.ipynb
           - analysis/text_analysis.ipynb
+      - section: conclusion.qmd
           
 format:
   html:
