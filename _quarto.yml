@@ -55,6 +55,9 @@ website:
           - pull_businesses.html
           - data_prep.ipynb
           - exploratory.ipynb
+      - section: contact/index.qmd
+        contents:
+          - contact/acknowledgements.qmd
 
 
 
