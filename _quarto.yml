@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   preview:
-    port: 4444
+    port: 3333
 
 website:
   title: "Exploring Philadelphia's Amenity Landscape"
@@ -31,7 +31,9 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
-          - data_prep.ipynb
+          - analysis/data_prep.ipynb
+          - analysis/exploratory.ipynb
+          - analysis/text_analysis.ipynb
       - section: contact/index.qmd
         contents:
           - contact/acknowledgements.qmd
