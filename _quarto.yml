@@ -29,7 +29,7 @@ website:
       - about.qmd
       - section: contact/index.qmd
         contents:
-          - contact/references.qmd
+          - contact/acknowledgements.qmd
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
