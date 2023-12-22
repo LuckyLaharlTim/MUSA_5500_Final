@@ -726,5 +726,12 @@
     "title": "Data Collection: Yelp Fusion API",
     "section": "Write geojson file",
     "text": "Write geojson file\nAfter removing duplicates, we write the sf object out to a geojson file for analysis.\n\nst_write(biz.sf, \"parks.geojson\", driver = \"geojson\")"
+  },
+  {
+    "objectID": "contact/acknowledgements.html",
+    "href": "contact/acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Acknowledgements\n\nSpecial Thanks to:\n\n\n\nDr. Nick Hand\n\n\nDr. Elizabeth Delmelle\n\n\nDr. Sara Jacoby\n\n\nHousing Initiative at Penn\n\n\nPenn Injury Science Center\n\n\nProvidence Adu"
   }
 ]
