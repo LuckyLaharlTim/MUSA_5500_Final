@@ -97,7 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,17 +118,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../../index.html" class="sidebar-logo-link">
       <img src="../../images/dancing icon.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+<<<<<<< HEAD
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final" rel="" title="Source GitHub" class="quarto-navigation-tool px-1" aria-label="Source GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/annaduan09" rel="" title="Anna Duan Github Profile" class="quarto-navigation-tool px-1" aria-label="Anna Duan Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/TrevorKap" rel="" title="Trevor Kapuvari Github Profile" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/LuckyLaharlTim" rel="" title="Timothy Oliver Github Profile" class="quarto-navigation-tool px-1" aria-label="Timothy Oliver Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/trevor-kapuvari-a25876253/" rel="" title="Trevor Kapuvari LinkedIn" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/timoliver200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM4Ej%2F58xQdy7qwIFEM3FFw%3D%3D" rel="" title="Some Linked In" class="quarto-navigation-tool px-1" aria-label="Some Linked In"><i class="bi bi-linkedin"></i></a>
+</div>
+=======
+>>>>>>> 1cf054987d7725c6264761384eab8196a3c44abb
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
+<<<<<<< HEAD
+=======
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -185,6 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
     </ul>
     </div>
+>>>>>>> 1cf054987d7725c6264761384eab8196a3c44abb
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
@@ -228,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The pandas module allows us to read, clean and preprocess the output CSV files that were web scraped</li>
 <li>The glob module allows us to search through file paths and search for files that meet a specific pattern in this example we look for .csv patterns</li>
 </ul>
-<div class="cell" data-execution_count="1">
+<div class="cell" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob <span class="im">as</span> gb </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
@@ -239,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Set your path to where CSV outputs of your zillow webscraping was exported to us the os chdir method</li>
 </ul>
-<div class="cell" data-execution_count="2">
+<div class="cell" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="st">"../webscraping_outputs-Z"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>os.chdir(path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -249,234 +263,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Use the glob method get generate a list of all your output csv in your directory</li>
 </ul>
-<div class="cell" data-scrolled="true" data-execution_count="3">
+<div class="cell" data-scrolled="true" data-execution_count="70">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>All <span class="op">=</span> gb.glob(path <span class="op">+</span> <span class="st">"/*.csv"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>All</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>['C:\\Users\\padu\\Desktop\\Zillow\\Zillow.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_07_22_21_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_13_45_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_13_53_03.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_14_53_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_14_58_39.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_16_00_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_16_05_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_18_30_19.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_19_25_35.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_20_38_13.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_08_21_19_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_01_21_42.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_08_06_51.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_12_55_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_15_31_12.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_21_11_32.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_22_34_50.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_09_23_04_37.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_10_16_58_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_10_19_46_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_10_22_39_48.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_11_11_02_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_11_15_14_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_11_15_38_03.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_12_11_47_51.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_12_16_12_41.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_12_19_20_33.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_13_22_07_55.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_14_03_20_12.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_14_18_33_48.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_15_14_00_32.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_16_14_54_36.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_16_21_41_56.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_17_10_54_17.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_17_14_15_27.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_17_21_09_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_18_12_41_24.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_18_20_07_46.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_19_11_50_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_19_12_28_53.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_19_19_24_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_20_00_22_38.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_20_13_20_45.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_20_20_08_40.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_20_21_23_13.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_21_03_11_05.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_21_12_52_44.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_21_19_13_32.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_22_11_18_51.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_22_13_40_47.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_22_20_00_47.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_22_20_29_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_23_12_56_47.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_23_17_56_39.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_23_20_50_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_24_11_31_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_25_13_41_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_25_18_04_37.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_25_21_41_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_26_11_48_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_27_21_12_35.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_27_21_22_50.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_29_10_25_44.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_29_13_24_23.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_29_21_34_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_30_11_07_55.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_30_21_08_15.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_03_31_12_05_55.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_04_01_23_33_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_04_04_17_47_12.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowRental_2021_04_05_12_19_33.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelenium_2021_03_27_23_31_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelenium_2021_04_01 (3).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelenium_2021_04_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelenium_2021_04_04_03_42_53.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_0004_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_19 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_19.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_19_.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_20 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_200.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_2200.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_23.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_24.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_26.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_27 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_27.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_30 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_04_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_0504_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_03.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_04 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_04 (3).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_07.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_19.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_21 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_22 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_05_31.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_02 (1).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_06.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_09.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_15.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_17.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_23.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_24.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_26.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_06_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_01.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_03.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_05.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_07.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_08 (2).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_13 (1).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_13.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_14 (1).csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_26.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_07_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_07.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_17.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_19.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_23.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_24.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_26.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_29.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_08_31.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_01.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_04.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_22.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_27.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_09_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_02.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_05.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_21.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_25.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_27.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_28.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_10_30.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_01.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_03.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_07.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_09.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_11.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_15.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_11_17.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2021_4_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2022_02_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2022_02_17_13.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2022_02_17_15.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2022_02_17_16.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSelium_2022_02_17_20.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_07.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_08.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_09.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_10.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_12.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_13.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_14.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_15.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_17.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_18.csv',
- 'C:\\Users\\padu\\Desktop\\Zillow\\ZillowSel_2021_04_19.csv']</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="70">
+<pre><code>['../webscraping_outputs-Z\\ZillowSelenium_2023_Dec_21_13-45-20.csv']</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Verify totoal number of files </span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(All)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>216</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="71">
+<pre><code>1</code></pre>
 </div>
 </div>
 </section>
@@ -489,7 +288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Afterward use the pd.concat method to concatenate all your csv files</li>
 </ul></li>
 </ul>
-<div class="cell" data-execution_count="5">
+<div class="cell" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(All)<span class="op">&gt;</span><span class="dv">0</span>:</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    Zillow <span class="op">=</span> (pd.read_csv(<span class="bu">file</span>) <span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> All)  </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    FinalZillow   <span class="op">=</span> pd.concat(Zillow, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
@@ -497,10 +296,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> warnings</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    warnings.warn(<span class="ss">f"There are no data in </span><span class="sc">{</span>path<span class="sc">}</span><span class="ss">, try using 'Webscraping Zillow Data.ipynb'."</span>,<span class="pp">UserWarning</span>,stacklevel<span class="op">=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="6">
+<div class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>FinalZillow.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>(88136, 12)</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="73">
+<pre><code>(96, 5)</code></pre>
 </div>
 </div>
 </section>
@@ -510,19 +309,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Because we are web scraping daily, there multiple duplicates in our data, we check for those using the duplicated method and the sum method</li>
 <li>We can identify the unique listings by subracting the duplicated listings from all lisitings</li>
 </ul>
-<div class="cell" data-execution_count="7">
+<div class="cell" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking for duplicated listings</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>FinalZillow.duplicated().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
-<pre><code>71359</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="74">
+<pre><code>33</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="8">
+<div class="cell" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking for unique listings by finding the difference between original listings and duplicated listings</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(FinalZillow.shape[<span class="dv">0</span>]) <span class="op">-</span> FinalZillow.duplicated().<span class="bu">sum</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
-<pre><code>16777</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="75">
+<pre><code>63</code></pre>
 </div>
 </div>
 </section>
@@ -531,13 +330,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Create a variable that stores the unique listings</li>
 </ul>
-<div class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>FinalUnique <span class="op">=</span> FinalZillow.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="10">
+<div class="cell" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(FinalUnique.shape[<span class="dv">0</span>]) <span class="op">-</span> FinalUnique.duplicated().<span class="bu">sum</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
-<pre><code>16777</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="77">
+<pre><code>63</code></pre>
 </div>
 </div>
 </section>
@@ -547,23 +346,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Change the output directory for your final CSV</li>
 <li>Since the cleaning including concatenating will be done multiple time for any addtional webscraping, you would have to export the final clean file to a different folder</li>
 </ul>
-<div class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>outPath <span class="op">=</span> path<span class="op">+</span><span class="st">"../clean/final"</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>os.chdir(outPath)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="78">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>../webscraping_outputs-Z</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="79">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>outPath <span class="op">=</span> path<span class="op">+</span><span class="st">"/clean"</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>os.chdir(outPath)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="export-the-final-output-as-a-csv-file" class="level3">
 <h3 class="anchored" data-anchor-id="export-the-final-output-as-a-csv-file">Export the final output as a CSV file</h3>
-<div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>FinalUnique.to_csv(<span class="st">"ZillowUnique.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="81">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>FinalUnique.to_csv(<span class="st">"ZillowUnique.csv"</span>, index<span class="op">=</span><span class="va">False</span>,)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>(<span class="bu">print</span>(<span class="st">"done"</span>))</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>os.chdir(<span class="st">"../"</span><span class="op">+</span>path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>done</code></pre>
 </div>
-<div class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>FinalUnique.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
-<pre><code>Index(['latitude', 'longitude', 'floorsize', 'streetaddress', 'zipcode',
-       'Locality', 'url', 'price', 'bedrooms', 'bedroomsLab', 'baths',
-       'overview'],
-      dtype='object')</code></pre>
+</div>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>FinalUnique.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>Index(['title', 'description', 'url', 'address', 'neighborhood'], dtype='object')</code></pre>
 </div>
 </div>
 

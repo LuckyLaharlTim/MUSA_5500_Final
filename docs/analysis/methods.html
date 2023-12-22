@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../analysis/index.html">Analysis</a></li><li class="breadcrumb-item"><a href="../analysis/methods.html">Methods</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Methods</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -84,11 +84,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/dancing icon.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final" rel="" title="Source GitHub" class="quarto-navigation-tool px-1" aria-label="Source GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/annaduan09" rel="" title="Anna Duan Github Profile" class="quarto-navigation-tool px-1" aria-label="Anna Duan Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/TrevorKap" rel="" title="Trevor Kapuvari Github Profile" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/LuckyLaharlTim" rel="" title="Timothy Oliver Github Profile" class="quarto-navigation-tool px-1" aria-label="Timothy Oliver Github Profile"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/trevor-kapuvari-a25876253/" rel="" title="Trevor Kapuvari LinkedIn" class="quarto-navigation-tool px-1" aria-label="Trevor Kapuvari LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/timoliver200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM4Ej%2F58xQdy7qwIFEM3FFw%3D%3D" rel="" title="Some Linked In" class="quarto-navigation-tool px-1" aria-label="Some Linked In"><i class="bi bi-linkedin"></i></a>
+</div>
+
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -193,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-acqusition-and-formattiing" class="level1">
 <h1>Data Acqusition and Formattiing</h1>
-This analysis uses two main data sources: business listings acquired from Yelp Fusion API’s Business Search endpoint <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final/blame/main/pull_businesses.html"> (R script here)</a> and home listings web-scraped from Zillow. The Yelp data was gathered using the yelpr package in the R programming language. Yelp Fusion’s Business Search endpoint allows for a wide range of search criteria, of which we used location, category, limit, and offset. Location refers to the search area, and can be anything from a ZIP code to the name of a state. Category refers to the type of businesses desired, and can be as specific as “pizza” or as generic as “food.” We had to strike a balance between being specific enough to have a narrow definition that could not be mistaken as various places but broad enough to cover the variations of a specific type of place. An example of this can be the difference between asking for outdoor places versus parks. Places tagged as parks featured everything we would assume to be for parks and recreation. Yet places tagged as outdoor would feature parks as well as rooftop bars, creating an unideal category. Limit is an integer value from 0 to 50, the maximum number of businesses that can be returned in the free version of Yelp Fusion. Offset can be compared to the page number of the search results, such that offset = 1 would access results 51 to 100 of the search, offset = 2 would access 101 to 150, and so on. <br><br> To bypass the 50 result limit, we had to get creative. We made a total of 480 API calls for each “category” (e.g.&nbsp;restaurants, parks, museums) by using a nested for-loop that iterates through each of Philadelphia’s 48 ZIP codes and offset values 0 to 10. In each loop, we stored the results of the current ZIP code/offset pair in a nested dataframe. While 480 API calls, equating to 24,000 potential businesses, for each category may seem excessive, this was in response to Yelp’s search algorithm, which starts from the centroid of each search area but runs over to surrounding areas once that one is depleted. We wanted to make sure that we captured all of the businesses in ZIP codes in Center City and other highly dense areas. To make each batch API call, we used a custom function that incorporates the functionality of the yelpr package and also uses the httr package to retrieve our desired fields from the resulting json output. At the end of each call, we had a dataframe of the name, longitude, latitude, address, average rating, and alias of each business in the category. We repeated this process for all of the following broad categories: <br> <br>
+This analysis uses two main data sources: business listings acquired from Yelp Fusion API’s Business Search endpoint &lt;href=“https://raw.githubusercontent.com/LuckyLaharlTim/MUSA_5500_Final/main/pull_businesses.html” (R script here)&gt; and home listings web-scraped from Zillow. The Yelp data was gathered using the yelpr package in the R programming language. Yelp Fusion’s Business Search endpoint allows for a wide range of search criteria, of which we used location, category, limit, and offset. Location refers to the search area, and can be anything from a ZIP code to the name of a state. Category refers to the type of businesses desired, and can be as specific as “pizza” or as generic as “food.” We had to strike a balance between being specific enough to have a narrow definition that could not be mistaken as various places but broad enough to cover the variations of a specific type of place. An example of this can be the difference between asking for outdoor places versus parks. Places tagged as parks featured everything we would assume to be for parks and recreation. Yet places tagged as outdoor would feature parks as well as rooftop bars, creating an unideal category. Limit is an integer value from 0 to 50, the maximum number of businesses that can be returned in the free version of Yelp Fusion. Offset can be compared to the page number of the search results, such that offset = 1 would access results 51 to 100 of the search, offset = 2 would access 101 to 150, and so on. <br><br> To bypass the 50 result limit, we had to get creative. We made a total of 480 API calls for each “category” (e.g.&nbsp;restaurants, parks, museums) by using a nested for-loop that iterates through each of Philadelphia’s 48 ZIP codes and offset values 0 to 10. In each loop, we stored the results of the current ZIP code/offset pair in a nested dataframe. While 480 API calls, equating to 24,000 potential businesses, for each category may seem excessive, this was in response to Yelp’s search algorithm, which starts from the centroid of each search area but runs over to surrounding areas once that one is depleted. We wanted to make sure that we captured all of the businesses in ZIP codes in Center City and other highly dense areas. To make each batch API call, we used a custom function that incorporates the functionality of the yelpr package and also uses the httr package to retrieve our desired fields from the resulting json output. At the end of each call, we had a dataframe of the name, longitude, latitude, address, average rating, and alias of each business in the category. We repeated this process for all of the following broad categories: <br> <br>
 <ul>
 <li>
 Food
