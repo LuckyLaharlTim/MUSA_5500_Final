@@ -18,9 +18,6 @@ website:
     logo: "images/dancing icon.png"
     pinned: true
     align: center
-    
-
-
     style: "docked"
     search: true
     collapse-level: 2
@@ -31,6 +28,8 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
+          - analysis/pull_businesses.Rmd
+          - data/scraping_zillow_data.ipynb
           - analysis/data_prep.ipynb
           - analysis/exploratory.ipynb
           - analysis/text_analysis.ipynb

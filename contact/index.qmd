@@ -6,22 +6,26 @@ feel free to use the contacts below.
 <br></br>
 <ins>**Anna Duan**</ins>
 
-*   *Contact Info Piece 1*
+*   Email:
+    -   annaduan@sas.upenn.edu
 
 *   <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a>
 
 <ins>**Trevor Kapuvari**</ins>
 
-*   kapuvarit@gmail.com
+*   Email:
+    -   kapuvari@design.upenn.edu
+    -   kapuvarit@gmail.com
 
 *   <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a>
 
 <ins>**Timothy Oliver**</ins>
 
-*   *Contact Info Piece 1*
+*   Email:
+    -   toliv@design.upenn.edu
+    -   timoliver200@gmail.com
 
-*   <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a>
+*   [LinkedIn](https://www.linkedin.com/in/timoliver200/)
 
-For more about the group members for this project...
-**(Github and Linked In links are available with the icons in the sidebar too!)**
+
 

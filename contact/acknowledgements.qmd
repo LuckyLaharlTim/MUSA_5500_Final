@@ -4,13 +4,18 @@
 
 
 
-<ul>
-  <li> Dr. Nick Hand </li>
-  <li> Dr. Elizabeth Delmelle</li>
-  <li> Dr. Sara Jacoby </li>
-  <li> Housing Initiative at Penn  </li>
-  <li> Penn Injury Science Center  </li>
-  <li> Providence Adu </li> 
+* Dr. Nick Hand
+  - For assistance in applying Python for data collection, visualizations, and the formation of this website.
+* Dr. Elizabeth Delmelle
+  - For authoring <ins>Rental Spatial Variations in Exclusionary Criteria from Online Rental Advertisements</ins> and describing method of incorporating listing data
+  - For sharing the webscraping source code behind the article
+* Providence Adu
+  - For authoring the source code and documentation of webscraping Zillow (and Craigslist) information in <ins>Rental Spatial Variations in Exclusionary Criteria from Online Rental Advertisements</ins>
+  - Webscraping Jupyter Notebooks available at [this repository](https://github.com/MLProject20/RentalExclusionaryCriteria/tree/main)
+* Dr. Sara Jacoby
+* Housing Initiative at Penn
+* Penn Injury Science Center
+
   
-</ul>
+
 
