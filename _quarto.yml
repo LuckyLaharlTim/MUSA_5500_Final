@@ -32,7 +32,6 @@ website:
         contents:
           - analysis/methods.qmd
           - data_prep.ipynb
-          - exploratory.ipynb
       - section: contact/index.qmd
         contents:
           - contact/acknowledgements.qmd
