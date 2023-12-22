@@ -5,7 +5,7 @@ project:
     port: 3333
 
 website:
-  title: "Finding Commercial Corridors in Philadelphia"
+  title: "Exploring Philadelphia's Amenity Landscape"
   site-url: "https://luckylaharltim.github.io/MUSA_5500_Final/" 
   repo-url: https://github.com/LuckyLaharlTim/MUSA_5500_Final.git 
   repo-actions: [source]
@@ -15,45 +15,28 @@ website:
     left: "&copy; CC-Anna Duan, Trevor Kapuvari, & Timothy Oliver, 2023"
 
   sidebar:
-    logo: "images/hip_logo.png"
+    logo: "images/dancing icon.png"
     pinned: true
     align: center
     tools: 
-      - icon: github
-        href: https://github.com/LuckyLaharlTim/MUSA_5500_Final
-        text: "Analysis Project GitHub"
-      - icon: github
-        href: https://github.com/annaduan09
-        text: "Anna Duan Github Profile" 
-      - icon: github
-        href: https://github.com/TrevorKap
-        text: "Trevor Kapuvari Github Profile" 
-      - icon: github
-        href: https://www.linkedin.com/in/trevor-kapuvari-a25876253/
-        text: "Trevor Kapuvari LinkedIn"
-      - icon: linkedin
-        href: https://github.com/LuckyLaharlTim
-        text: "Timothy Oliver Github Profile" 
-      - icon: linkedin
-        href: https://www.linkedin.com/in/timoliver200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM4Ej%2F58xQdy7qwIFEM3FFw%3D%3D
-        text: "Some Linked In" 
 
-
-    style: "docked"
-    search: true
-    collapse-level: 2
+style: "docked"
+search: true
+collapse-level: 2
+contents:
+  - href: index.qmd
+    text: Welcome
+  - about.qmd
+  - section: contact/index.qmd
     contents:
-      - href: index.qmd
-        text: Welcome
-      - about.qmd
-      - section: contact/index.qmd
-        contents:
-          - contact/references.qmd
-      - section: analysis/index.qmd
-        contents:
-          - analysis/methods.qmd
-          - analysis/5-yelp_clean_and_explore.ipynb
-          - analysis/results.qmd
+      - contact/references.qmd
+      - contact/acknowledgements.qmd
+  - section: analysis/index.qmd
+    contents:
+      - analysis/methods.qmd
+      - pull_businesses.html
+      - data_prep.ipynb
+      - exploratory.ipynb
 
 format:
   html:
@@ -63,7 +46,3 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
-
-
-
