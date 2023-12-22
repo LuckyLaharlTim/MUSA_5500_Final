@@ -5,15 +5,13 @@ subtitle: "Using Yelp Fusion API and Web-scraping to create neighborhood amenity
 
 ## Welcome!
 
-Philadelphia, like many cities has a wide diversity of neighborhoods each with their own unique atmosphere. As these neighborhoods and the lifestyles associated evolve, it is the responsibility of the city to monitor and record the community amenities that service residents and newcomers. Open-sources provide broad overviews but fail to measure the nuanced preferences of residents.
-For instance, parks and greenspaces are valued differently in each neighborhood and vary in quality, yet OpenDataPhilly.org lists all parks managed by Parks and Recreation without the additional insight on quality and community feedback. 
-Combining the pre-existing nuance between what is listed versus what is valued, exacterbated by  the pandemic, we have developed a tool that creates a comprehensive frame of each neighborhood in Philadelphia. Ultimately, this tool will serve as a way of uplifting neighborhoods by displaying their most valued assets and showcasing the lifestyle and features they have to offer. 
+How can you know a city? Is it the landmarks, the places you go to rest, work, and play, or is it the characteristics of the people in each neighborhoods? As recent-ish (7 months to 5 years) Philly transplants, the three of us have been grappling with this question as we deepen our understanding of Philadelphia through daily life and research. 
 
+In urban planning and housing policy research, we commonly use Census, Health, Housing, and other administrative data when comparing neighborhoods. This leads to rather black and white thinking: it is common in housing policy research, for example, to cast some neighborhoods as "high opportunity" and others as "low opportunity." In more cases than not, these labels map directly onto patterns of racial and economic segregation in cities, and serve to reinforce negative stereotypes about low-income communities of color. By this logic, marginalized folks are encouraged to move into "high opportunity" neighborhoods, leaving behind the communities, spaces, and places they are comfortable and familiar with. 
 
+We propose a new lens of evaluating neighborhoods through amenities. In our work at the Housing Initiative at Penn, we are learning that rather than seeking neighborhoods with traditional markers of "opportunity" (high income, low poverty, low crime), low-income folks in Philadelphia are interested in communities with dynamic street life, restaurants, and things to do out of their homes. In short, they are interested in lively commercial areas with plenty of amenities. 
 
-
-
-
+Hence arose the inspiration for this project. In our work, we seek to use the most up-to-date business data available to document the amenity landscape in Philadelphia and create a profile for Philadelphia neighborhoods. We hope that this work will inform future policymakers and also help residents make residential decisions based on their preferences rather than the lofty ideal of economic and social "opportunity."
 
 
 
