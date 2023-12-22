@@ -27,13 +27,13 @@ website:
       - href: index.qmd
         text: Welcome
       - about.qmd
-      - section: contact/index.qmd
-        contents:
-          - contact/acknowledgements.qmd
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
           - exploratory.ipynb
+      - section: contact/index.qmd
+        contents:
+          - contact/acknowledgements.qmd
 
 
 
