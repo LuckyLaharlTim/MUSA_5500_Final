@@ -34,9 +34,9 @@ or in Linux:
 
 *   add appropriate ipynb files or folders with index.qmd to the repository
     -   then make appropriate section or contents references in top-level _quarto.yml
-    -   *  run `quarto preview .` in the Miniforge Prompt to see you the changes look (you should be able to save files and changes will show up if already open)
+    -   *  run `quarto preview .` in the Miniforge Prompt to see how the changes look (you should be able to save files and changes will show up if already open)
 
-*  run `quarto render .` in the Miniforge Prompt
+*  **run `quarto render .` in the Miniforge Prompt**
 
 *  add docs/ folder to github and push
 
