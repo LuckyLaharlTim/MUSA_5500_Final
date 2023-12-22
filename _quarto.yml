@@ -52,7 +52,7 @@ website:
       - section: analysis/index.qmd
         contents:
           - analysis/methods.qmd
-          - pull_businesses.html
+          - pull_businesses.rmd
           - data_prep.ipynb
           - exploratory.ipynb
       - section: contact/index.qmd
