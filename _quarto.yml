@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   preview:
-    port: 3333
+    port: 4444
 
 website:
   title: "Exploring Philadelphia's Amenity Landscape"
@@ -18,25 +18,25 @@ website:
     logo: "images/dancing icon.png"
     pinned: true
     align: center
-    tools: 
+    
 
-style: "docked"
-search: true
-collapse-level: 2
-contents:
-  - href: index.qmd
-    text: Welcome
-  - about.qmd
-  - section: contact/index.qmd
-    contents:
-      - contact/references.qmd
-      - contact/acknowledgements.qmd
-  - section: analysis/index.qmd
-    contents:
-      - analysis/methods.qmd
-      - data_prep.ipynb
-      - exploratory.ipynb
 
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - about.qmd
+      - section: analysis/index.qmd
+        contents:
+          - analysis/methods.qmd
+          - data_prep.ipynb
+          - exploratory.ipynb
+      - section: contact/index.qmd
+        contents:
+          - contact/acknowledgements.qmd
+          
 format:
   html:
     highlight-style: solarized
