@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/index.html</loc>
+<<<<<<< HEAD
     <lastmod>2023-12-22T01:27:46.628Z</lastmod>
   </url>
   <url>
@@ -43,24 +44,41 @@
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Craigslist Data.html</loc>
     <lastmod>2023-12-22T01:27:20.324Z</lastmod>
+=======
+    <lastmod>2023-12-22T01:20:31.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/about.html</loc>
+    <lastmod>2023-12-22T01:20:32.833Z</lastmod>
+>>>>>>> 1cf054987d7725c6264761384eab8196a3c44abb
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/index.html</loc>
     <lastmod>2023-12-22T01:27:18.174Z</lastmod>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/pull_businesses.html</loc>
     <lastmod>2023-12-22T01:27:17.085Z</lastmod>
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/Limitations.html</loc>
     <lastmod>2023-12-22T01:27:11.389Z</lastmod>
+=======
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/index.html</loc>
+    <lastmod>2023-12-22T01:20:34.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data_prep.html</loc>
+    <lastmod>2023-12-22T01:20:43.283Z</lastmod>
+>>>>>>> 1cf054987d7725c6264761384eab8196a3c44abb
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/6-something.html</loc>
     <lastmod>2023-12-22T01:27:09.590Z</lastmod>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/4-folium.html</loc>
     <lastmod>2023-12-22T01:24:37.535Z</lastmod>
   </url>
@@ -139,5 +157,33 @@
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/exploratory.html</loc>
     <lastmod>2023-12-22T01:27:46.233Z</lastmod>
+=======
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/pull_businesses.html</loc>
+    <lastmod>2023-12-22T00:56:40.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/exploratory.html</loc>
+    <lastmod>2023-12-22T01:20:59.844Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/methods.html</loc>
+    <lastmod>2023-12-22T01:20:29.676Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Zillow Data.html</loc>
+    <lastmod>2023-12-22T01:20:25.643Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/text_analysis.html</loc>
+    <lastmod>2023-12-22T01:20:24.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Zillow Data.html</loc>
+    <lastmod>2023-12-22T01:20:25.171Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/acknowledgements.html</loc>
+    <lastmod>2023-12-22T01:21:09.924Z</lastmod>
+>>>>>>> 1cf054987d7725c6264761384eab8196a3c44abb
   </url>
 </urlset>
