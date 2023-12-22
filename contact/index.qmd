@@ -1,6 +1,9 @@
 # Project Team
 
-We are a team of 3 graduate students in the <a href="https://www.design.upenn.edu/musa/about">Master of Urban Spatial Analytics program</a>  at the University of Pennsylvania. This project was completed as our final project for MUSA 5500, Geospatial Data Science in Python. To learn more about this <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final">project</a> or our other work, please reach out to our team below:
+We are a team of 3 graduate students in the <a href="https://www.design.upenn.edu/musa/about">Master of Urban Spatial Analytics program</a> at the University of Pennsylvania. This project was completed as our final project for <a href="https://musa-550-fall-2023.github.io/">MUSA550: Geospatial Data Science in Python</a>. To learn more about this <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final">project</a> or our other work, please reach out to our team below:
+
+
+![](images/AD.jpg){width=6in}  
 
 <strong>**Anna Duan**</strong>
 
@@ -9,6 +12,8 @@ We are a team of 3 graduate students in the <a href="https://www.design.upenn.ed
 
 *   <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a>
 
+![](images/TK.jpg){width=6in}  
+
 <strong>**Trevor Kapuvari**</strong>
 
 *   Email:
@@ -16,6 +21,8 @@ We are a team of 3 graduate students in the <a href="https://www.design.upenn.ed
     -   [kapuvarit@gmail.com](mailto:kapuvarit@gmail.com)
 
 *   <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a>
+
+![](images/TO.jpg){width=6in}  
 
 <strong>**Timothy Oliver**</strong>
 
