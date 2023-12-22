@@ -1,11 +1,11 @@
 ---
 title: "Exploring Philly's Amenity Landscape"
-subtitle: "Using Yelp Fusion API and Web-scraping to create neighborhood amenity profiles"
+subtitle: "Using Yelp Fusion API and Web-scraping to create hi-res neighborhood amenity profiles"
 ---
 
 ## Welcome!
 
-How can you know a city? Is it the landmarks, the places you go to rest, work, and play, or is it the characteristics of the people in each neighborhoods? As recent-ish (7 months to 5 years) Philly transplants, the three of us have been grappling with this question as we deepen our understanding of Philadelphia through daily life and research. 
+How can you know a city? Is it the landmarks, the places you go to rest, work, and play, or is it the characteristics of the people in each neighborhoods? As recent-ish (7 months to 5 years) Philly transplants, our team has been grappling with this question as we deepen our understanding of Philadelphia through daily life and research. 
 
 In urban planning and housing policy research, we commonly use Census, Health, Housing, and other administrative data when comparing neighborhoods. This leads to rather black and white thinking: it is common in housing policy research, for example, to cast some neighborhoods as "high opportunity" and others as "low opportunity." In more cases than not, these labels map directly onto patterns of racial and economic segregation in cities, and serve to reinforce negative stereotypes about low-income communities of color. By this logic, marginalized folks are encouraged to move into "high opportunity" neighborhoods, leaving behind the communities, spaces, and places they are comfortable and familiar with. 
 
@@ -13,8 +13,5 @@ We propose a new lens of evaluating neighborhoods through amenities. In our work
 
 Hence arose the inspiration for this project. In our work, we seek to use the most up-to-date business data available to document the amenity landscape in Philadelphia and create a profile for Philadelphia neighborhoods. We hope that this work will inform future policymakers and also help residents make residential decisions based on their preferences rather than the lofty ideal of economic and social "opportunity."
 
-
-
-
-
+![](images/cover_pic){width=10in}
  
