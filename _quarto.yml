@@ -20,30 +20,23 @@ website:
     align: center
     tools: 
 
-
-
-    style: "docked"
-    search: true
-    collapse-level: 2
+style: "docked"
+search: true
+collapse-level: 2
+contents:
+  - href: index.qmd
+    text: Welcome
+  - about.qmd
+  - section: contact/index.qmd
     contents:
-      - href: index.qmd
-        text: Welcome
-      - about.qmd
-      - section: contact/index.qmd
-        contents:
-          - contact/references.qmd
-      - section: analysis/index.qmd
-  contents:
-    - analysis/methods.qmd
-    - pull_businesses.html
-    - data_prep.ipynb
-    - exploratory.ipynb
-
-      - section: contact/index.qmd
-        contents:
-          - contact/acknowledgements.qmd
-
-
+      - contact/references.qmd
+      - contact/acknowledgements.qmd
+  - section: analysis/index.qmd
+    contents:
+      - analysis/methods.qmd
+      - pull_businesses.html
+      - data_prep.ipynb
+      - exploratory.ipynb
 
 format:
   html:
@@ -53,7 +46,3 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
-
-
-
