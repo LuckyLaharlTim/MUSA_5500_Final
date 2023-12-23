@@ -5,7 +5,7 @@ project:
     port: 4444
 
 website:
-  title: "Exploring Philadelphia's Amenity Landscape"
+  title: "Mapping Philly's Amenity Landscape"
   site-url: "https://luckylaharltim.github.io/MUSA_5500_Final/" 
   repo-url: https://github.com/LuckyLaharlTim/MUSA_5500_Final.git 
   repo-actions: [source]
@@ -23,8 +23,9 @@ website:
     collapse-level: 2
     contents:
       - href: index.qmd
-        text: Welcome
-      - section: about.qmd
+        text: Motivation
+      - href: about.qmd
+        text: "Introduction: Mapping Amenity Clusters"
         contents:
           - contact/index.qmd
           - contact/acknowledgements.qmd
@@ -36,7 +37,7 @@ website:
           - analysis/data_prep.ipynb
           - analysis/exploratory.ipynb
           - analysis/text_analysis.ipynb
-      - section: conclusion.qmd
+          - conclusion.qmd
           
 format:
   html:

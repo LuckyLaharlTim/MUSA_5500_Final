@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploring Philadelphia’s Amenity Landscape - Methods</title>
+<title>Mapping Philly’s Amenity Landscape - Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,18 +100,18 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text">Motivation</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mapping Philadelphia's Amenity Clusters</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Introduction: Mapping Amenity Clusters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../contact/index.html" class="sidebar-item-text sidebar-link">
@@ -130,11 +130,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../analysis/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Analysis</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../analysis/methods.html" class="sidebar-item-text sidebar-link active">
@@ -168,11 +168,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Zillow Description Cross-Reference</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion: proposing neighborhood amenity clusters</span></a>
+  </div>
+</li>
       </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Takeaways</span></span>
   </li>
     </ul>
     </div>
@@ -190,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#zillow-webscraping" id="toc-zillow-webscraping" class="nav-link" data-scroll-target="#zillow-webscraping">Zillow Webscraping</a></li>
   </ul></li>
   <li><a href="#cluster-analysis" id="toc-cluster-analysis" class="nav-link" data-scroll-target="#cluster-analysis">Cluster Analysis</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -284,11 +285,6 @@ Kid-Friendly
 <section id="cluster-analysis" class="level1">
 <h1>Cluster Analysis</h1>
 <p>In Python, we used the alias field to filter and recategorize amenities within each broad category. In Yelp’s database, businesses are not identified using specific categories, but rather a list of labels collectively known as its alias. For instance, a pizza shop’s alias field may be “pizza, american, italian”. Similarly, a bar may have the alias of “bars, cocktailbars, nightlife”. We created three columns based on this field: desc_1, desc_2, and desc_3, corresponding to the three terms in the alias. Then, we removed and replaced non-pertinent (e.g.&nbsp;barbershop in restaurants) and non-specific (e.g.&nbsp;fooddelivery in restaurants) rows until we were left with a core set of secondary description categories (e.g.&nbsp;pizza, chinese, italian). Following, we combined the cleaned datasets containing businesses from each category, and intersected it with tract, neighborhood, and planning district boundaries for our analysis. Using this dataset, we conducted an exploratory analysis followed by a k-means cluster analysis. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis. From there we conducted a cluster-analysis on various categories, broad and specific.</p>
-</section>
-<section id="limitations" class="level1">
-<h1>Limitations</h1>
-<p>Our analysis is firstly limited by a number of disparities between the demographics of Yelp’s user base and Philadelphia’s residents. First, Yelp users skew older, with 40% of users over 55 years of age, 35% from 35 to 54, and only 25% from 18 to 34. Philadelphia’s median age is 34.6. In terms of income, Yelp users tend to be higher income. 80% of users make more than $60k per year. By contrast, according to the US Census Bureau, Philadelphia has a median income of $27,331. Finally, 77% of Yelp users hold at least a college degree, compared to 33.6% of Philadelphians. Combined, these disparities suggest that the businesses listed and most reviewed on Yelp do not fully portray the amenity landscape of Philadelphia. <br> <br> Using Yelp data presents another challenge: when sorting business listings using the alias field, there appears to be no hierarchy of importance between the three terms in the alias. For instance, in some cases, the first term would be the most specific (e.g.&nbsp;pizza shop) and the third term would be less specific (e.g.&nbsp;food delivery). In other cases, it would be the reverse. Because of this, we had to write a complicated Python script for iterating over the three alias terms for each business and replacing the first term with the second or third when the first term is vague. In cases where all three terms were vague, we searched the business titles for terms suggesting specific restaurant types or cuisines (e.g.&nbsp;pizzeria for pizza, or steaks for sandwich shops). While this iterative process allows us to capture more meaning from our data, it is labor intensive and prone to human error and subjectivity, making it less replicable than simply identifying the first term in the alias field as the business’s subcategory. <br><br> <a href="https://www.yelp-press.com/company/fast-facts/default.aspx">Yelp Fast Facts/Demograhpics Data</a></p>
-<p>The use of Zillow data benefits from problems in the Yelp data’s current form such as searching no clear ranking in the terms under a business’s alias, but ensuring that these terms do not overlap with information about a house in the description is difficult. Furthermore, the presence of records that put the address within the description or have no address at all present issues with offering later granularity should they not have their neighborhood in the description. Otherwise, current failure to include geocoding or some weight or importance factor for ranking mentions–ideally giving great preference to specific business mentions–are the largest limitations of the Zillow analysis in our current implementation.</p>
 
 
 </section>

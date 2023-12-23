@@ -1,20 +1,12 @@
----
-title: "Mapping Philadelphia's Amenity Clusters"
----
-
+<img src="images/clusters_pic.png" width="1000px">
 
 Our project aims to develop a tool that will enable residents, newcomers, visitors, and others to explore the amenities available in neighborhoods around the city. 
 
 Using Yelp and Zillow data, we collected up-to-date information on a wide range of amenities throughout Philadelphia. Using data visualization and analysis, we prototyped a guide to Philadelphia's amenities as well as a set of neighborhood typologies based on their amenity profiles. In our analysis, we focus on differentiating neighborhoods based on their unique assets rather than comparing neighborhoods based on the raw counts of businesses available.
 
-In this analysis, we seek to answer the following questions:
 
-- What is the amenity landscape in Philadelphia like, beyond the downtown area?
-- How much variation is there within amenity categories, such as restaurants?
-- What are common neighborhood amenity typologies?
-- How can residents use this knowledge to inform their residential decision making?
+### Our research questions
+
+<img src="images/research_qs.png" width="1000px">
 
 This novel dataset and analysis has the potential to help not just prospective residents and visitors, but has far-reaching applications in planning, policy, and research. 
-
-
-  <img src="images/clusters_pic.png" width="1000px">
