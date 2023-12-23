@@ -15,7 +15,8 @@ title: "Discussion: proposing neighborhood amenity clusters"
 - restaurants, beauty, and grocery, for example, are all over, while arts and histroic sites are concentrated in specific districts
 
 ## Typologies  
-In our analysis, we identified 7 distinct clusters of neighborhoods with similar amenity compositions. These clusters were determined using a k-means cluster analysis of the percentage share of each amenity type. Percentage share was used in lieu of raw counts or counts per area to counter the high variation in population density, and to emphasize qualitative differences rather than rank neighborhoods against each other. 
+In our analysis, we identified 7 distinct clusters of neighborhoods with similar amenity compositions. These clusters were determined using a k-means cluster analysis of the percentage share of each amenity type. Percentage share was used in lieu of raw counts or counts per area to counter the high variation in population density, and to emphasize qualitative differences rather than rank neighborhoods against each other. The clusters are as follows:
+
 
 ## Applications for research  
 
