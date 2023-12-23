@@ -20,7 +20,7 @@ We are a team of 3 graduate students in the [Master of Urban Spatial Analytics p
 </div>
 
 <div style="flex: 1; min-width: 220px; max-width: 220px;">
-  <img src="../images/TO.png" style="width: 100%; height: auto; border-radius: 50%;">
+  <img src="../images/TO.jpg" style="width: 100%; height: auto; border-radius: 50%;">
   <div><strong>Timothy Oliver</strong></div>
   <div>MUSA '24</div>
   <div><a href="mailto:timoliver200@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a></div>
