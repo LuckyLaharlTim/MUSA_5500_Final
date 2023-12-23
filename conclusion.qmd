@@ -1,22 +1,17 @@
 ---
-title: "Discussion: proposing neighborhood amenity clusters"
+title: "Conclusion: proposing neighborhood amenity clusters"
 ---
 
 
-## Amenity Landscape  
-- highest concentration of amenities is in center city
-- amenity landscape dominated by restaurants, services, and retail
+## Philadelphia's Amenity Landscape  
+In Philadelphia's urban landscape, the densest concentration of amenities is found in the center city, characterized predominantly by an array of restaurants, services, and retail outlets. This central zone stands out as a vibrant hub for everyday urban life and economic activity. However, the amenity distribution across the city is not uniform. While essentials like restaurants, beauty services, and grocery stores are widespread, specific amenities such as green spaces, sports facilities, historic sites, and arts venues are more localized, creating unique clusters in certain districts. This pattern of specialized neighborhoods beyond the amenity-rich center city adds to Philadelphia's appeal as a case study in urban amenity clustering, highlighting its diverse and distinct urban identity.
 
-## Variation in amenities  
-- not all amenity types are clustered in center city
-- some are concentrated in specific areas (e.g. green space, sports, historic, arts)
-- this makes Philadelphia an interesting city for amenity clusters
-- beyond the amenity-dense center city, neighborhoods are highly specialized
-- restaurants, beauty, and grocery, for example, are all over, while arts and histroic sites are concentrated in specific districts
+<img src="images/cc_amenities.png" width="800px">
 
-## Typologies  
+## Neighborhood Amenity Clusters  
 In our analysis, we identified 7 distinct clusters of neighborhoods with similar amenity compositions. These clusters were determined using a k-means cluster analysis of the percentage share of each amenity type. Percentage share was used in lieu of raw counts or counts per area to counter the high variation in population density, and to emphasize qualitative differences rather than rank neighborhoods against each other. The clusters are as follows:
 
+<img src="images/cluster_maps.png" width="1000px">
 
 ## Applications for research  
 
