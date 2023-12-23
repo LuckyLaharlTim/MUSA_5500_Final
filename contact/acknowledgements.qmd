@@ -1,21 +1,16 @@
 # Acknowledgements
 
-<ins> Special Thanks to:</ins>
+Special Thanks to:
+<br></br>
 
+- **Dr. Nick Hand**  
+  For his invaluable guidance in project design, data collection, and website development.
 
+- **Dr. Sara Jacoby**  
+  For her ongoing support, advice, and encouragement throughout this project, and for her insights into applying exploratory spatial data science methods in housing and public health research.
 
-* Dr. Nick Hand
-  - For assistance in applying Python for data collection, visualizations, and the formation of this website.
-* Dr. Elizabeth Delmelle
-  - For authoring <ins>Rental Spatial Variations in Exclusionary Criteria from Online Rental Advertisements</ins> and describing method of incorporating listing data
-  - For sharing the webscraping source code behind the article
-* Providence Adu
-  - For authoring the source code and documentation of webscraping Zillow (and Craigslist) information in <ins>Rental Spatial Variations in Exclusionary Criteria from Online Rental Advertisements</ins>
-  - Webscraping Jupyter Notebooks available at [this repository](https://github.com/MLProject20/RentalExclusionaryCriteria/tree/main)
-* Dr. Sara Jacoby
-* Housing Initiative at Penn
-* Penn Injury Science Center
+- **Dr. Elizabeth Delmelle**  
+  For her expertise in integrating real estate data and generously sharing her Zillow web scraping workflow.
 
-  
-
-
+- **Providence Adu**  
+  For developing the foundational source code and documentation for Zillow web scraping, which significantly influenced our workflow.
