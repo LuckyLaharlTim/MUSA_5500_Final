@@ -52,7 +52,7 @@ We store information on the property *title* and *description* where applicable 
 However, unsuccessful efforts led to focus on using the title and description while also storing the url the data was retrieved from. 20 pages of data were retrieved (relatively 441 records) through webscraping with miscellaneous other records from later attempts. 
 
 Once the webscraped data was organized into a csv, amenity-related text and the neighborhood of the property was searched to enable similar analyses as the Yelp Data methods. A simple word cloud analysis of the frequency of mentions
-of neighborhoods and amenity words in all the listings was created as a precursor to other visualizations--alongside finding problems from cleaning. A sample cluster analysis of the neighborhoods similar to one performed for the main amenity types in the Yelp data is also presented (using k=12 clusters for the number of amenity types).
+of neighborhoods and amenity words in all the listings was created as a precursor to other visualizations--alongside finding problems from cleaning. A sample cluster analysis of the neighborhoods similar to one performed for the main amenity types in the Yelp data is also presented (using k=6 clusters similar to what was done for Yelp data).
 
 The incorporation of the Zillow data is not comprehensive to the same standard as the Yelp data, but it serves as a useful proof of concept for cross-reference with larger numbers of listings and more attention taken to communicate provided insights.
 

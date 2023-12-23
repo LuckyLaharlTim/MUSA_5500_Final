@@ -20,7 +20,7 @@ We are a team of 3 graduate students in the [Master of Urban Spatial Analytics p
 <div style="margin: 10px; width: 200px;">
   <img src="../images/TO.jpg" width="200px" style="margin-bottom: 10px;">
   <div><strong>Timothy Oliver, MUSA '24</strong></div>
-  <div><a href="mailto:toliv@design.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a></div>
+  <div><a href="mailto:timoliver200@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a></div>
 </div>
 
 </div>
