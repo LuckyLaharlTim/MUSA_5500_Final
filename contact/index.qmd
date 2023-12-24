@@ -3,23 +3,26 @@ Meet the Team
 
 We are a team of 3 graduate students in the [Master of Urban Spatial Analytics program](https://www.design.upenn.edu/musa/about) at the University of Pennsylvania. This project was completed as our final project for [MUSA550: Geospatial Data Science in Python](https://musa-550-fall-2023.github.io/). To learn more about this [project](https://github.com/LuckyLaharlTim/MUSA_5500_Final) or our other work, please reach out to our team below:
 
-<div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; text-align: center;">
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; gap: 20px;">
 
-<div style="margin: 10px; width: 200px;">
-  <img src="../images/AD.png" width="200px" style="margin-bottom: 10px;">
-  <div><strong>Anna Duan, MUSA '25</strong></div>
+<div style="flex: 1; min-width: 220px; max-width: 220px;">
+  <img src="../images/AD.png" style="width: 100%; height: auto; border-radius: 50%;">
+  <div><strong>Anna Duan</strong></div>
+  <div>MUSA '25</div>
   <div><a href="mailto:annaduan@sas.upenn.edu">Email</a> | <a href="https://www.linkedin.com/in/annaduan/">LinkedIn</a></div>
 </div>
 
-<div style="margin: 10px; width: 200px;">
-  <img src="../images/TK.jpg" width="200px" style="margin-bottom: 10px;">
-  <div><strong>Trevor Kapuvari, MUSA '24</strong></div>
+<div style="flex: 1; min-width: 220px; max-width: 220px;">
+  <img src="../images/TK.jpg" style="width: 100%; height: auto; border-radius: 50%;">
+  <div><strong>Trevor Kapuvari</strong></div>
+  <div>MUSA '24</div>
   <div><a href="mailto:kapuvarit@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/trevor-kapuvari/">LinkedIn</a></div>
 </div>
 
-<div style="margin: 10px; width: 200px;">
-  <img src="../images/TO.jpg" width="200px" style="margin-bottom: 10px;">
-  <div><strong>Timothy Oliver, MUSA '24</strong></div>
+<div style="flex: 1; min-width: 220px; max-width: 220px;">
+  <img src="../images/TO.jpg" style="width: 100%; height: auto; border-radius: 50%;">
+  <div><strong>Timothy Oliver</strong></div>
+  <div>MUSA '24</div>
   <div><a href="mailto:timoliver200@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/timoliver200/">LinkedIn</a></div>
 </div>
 

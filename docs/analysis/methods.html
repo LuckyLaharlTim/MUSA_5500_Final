@@ -190,11 +190,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#our-project" id="toc-our-project" class="nav-link active" data-scroll-target="#our-project">Our Project</a></li>
-  <li><a href="#data-acqusition-and-formattiing" id="toc-data-acqusition-and-formattiing" class="nav-link" data-scroll-target="#data-acqusition-and-formattiing">Data Acqusition and Formattiing</a>
+  <li><a href="#data-acquisition-and-formatting" id="toc-data-acquisition-and-formatting" class="nav-link" data-scroll-target="#data-acquisition-and-formatting">Data Acquisition and Formatting</a>
   <ul class="collapse">
   <li><a href="#zillow-webscraping" id="toc-zillow-webscraping" class="nav-link" data-scroll-target="#zillow-webscraping">Zillow Webscraping</a></li>
-  </ul></li>
   <li><a href="#cluster-analysis" id="toc-cluster-analysis" class="nav-link" data-scroll-target="#cluster-analysis">Cluster Analysis</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final.git/blob/main/analysis/methods.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -220,76 +220,21 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="our-project" class="level1">
 <h1>Our Project</h1>
-<p>This project proposes a set of neighborhood typologies through the lens of amenities available to residents. The aim of this analysis is to provide an up-to-date profile of the amenities available citywide to inform planning, research, and residents and tourists’ understanding of the city.</p>
-<p><br> <br></p>
+<p>This project develops neighborhood typologies in Philadelphia based on available amenities. Our analysis aims to provide a contemporary amenity profile of the city to aid urban planning, research, and enhance the understanding of the city for residents and tourists.</p>
 </section>
-<section id="data-acqusition-and-formattiing" class="level1">
-<h1>Data Acqusition and Formattiing</h1>
-This analysis uses two main data sources: business listings acquired from Yelp Fusion API’s Business Search endpoint <a href="https://github.com/LuckyLaharlTim/MUSA_5500_Final/blame/main/pull_businesses.html"> (R script here)</a> and home listings web-scraped from Zillow. The Yelp data was gathered using the yelpr package in the R programming language. Yelp Fusion’s Business Search endpoint allows for a wide range of search criteria, of which we used location, category, limit, and offset. Location refers to the search area, and can be anything from a ZIP code to the name of a state. Category refers to the type of businesses desired, and can be as specific as “pizza” or as generic as “food.” We had to strike a balance between being specific enough to have a narrow definition that could not be mistaken as various places but broad enough to cover the variations of a specific type of place. An example of this can be the difference between asking for outdoor places versus parks. Places tagged as parks featured everything we would assume to be for parks and recreation. Yet places tagged as outdoor would feature parks as well as rooftop bars, creating an unideal category. Limit is an integer value from 0 to 50, the maximum number of businesses that can be returned in the free version of Yelp Fusion. Offset can be compared to the page number of the search results, such that offset = 1 would access results 51 to 100 of the search, offset = 2 would access 101 to 150, and so on. <br><br> To bypass the 50 result limit, we had to get creative. We made a total of 480 API calls for each “category” (e.g.&nbsp;restaurants, parks, museums) by using a nested for-loop that iterates through each of Philadelphia’s 48 ZIP codes and offset values 0 to 10. In each loop, we stored the results of the current ZIP code/offset pair in a nested dataframe. While 480 API calls, equating to 24,000 potential businesses, for each category may seem excessive, this was in response to Yelp’s search algorithm, which starts from the centroid of each search area but runs over to surrounding areas once that one is depleted. We wanted to make sure that we captured all of the businesses in ZIP codes in Center City and other highly dense areas. To make each batch API call, we used a custom function that incorporates the functionality of the yelpr package and also uses the httr package to retrieve our desired fields from the resulting json output. At the end of each call, we had a dataframe of the name, longitude, latitude, address, average rating, and alias of each business in the category. We repeated this process for all of the following broad categories: <br> <br>
-<ul>
-<li>
-Food
-</li>
-<li>
-Parks
-</li>
-<li>
-Education
-</li>
-<li>
-Grocery
-</li>
-<li>
-Entertainment
-</li>
-<li>
-Nightlife
-</li>
-<li>
-Shopping
-</li>
-<li>
-Healthcare
-</li>
-<li>
-Historic
-</li>
-<li>
-Art
-</li>
-<li>
-Beauty
-</li>
-<li>
-Kid-Friendly
-</li>
-</ul>
-<p>Using the longitude and latitude fields, we converted the data frame into a spatial features object and wrote a total of 14 GeoJSON files to be cleaned, sorted, and analyzed in Python.</p>
+<section id="data-acquisition-and-formatting" class="level1">
+<h1>Data Acquisition and Formatting</h1>
+<p>Our analysis draws from two primary data sources: Yelp Fusion API business listings and Zillow home listings. We used the Yelp Fusion API’s Business Search endpoint, utilizing parameters like location, category, limit, and offset to acquire a comprehensive dataset. The <code>yelpr</code> R package facilitated this collection, with custom functions enhancing the retrieval process. To overcome Yelp’s 50 result limit per call, we performed 480 API calls per category across Philadelphia’s 48 ZIP codes. The resulting data, encompassing various broad categories, was then geocoded into GeoJSON files for subsequent cleaning and analysis in Python.</p>
 <section id="zillow-webscraping" class="level2">
 <h2 class="anchored" data-anchor-id="zillow-webscraping">Zillow Webscraping</h2>
-<p>The Zillow home listings were obtained using search result links for ‘for-sale’ and ‘rental’ homes in Philadelphia, PA. From the search pages, links to realtor (or lessor) Zillow pages with further descriptions of the property were obtained using a combination of <code>selenium</code>, its detection-preventing support package <code>selenium-stealth</code>, <code>Beautiful Soup</code>’s html parser, and supporting functions from other libraries. This linked realtor page provided…</p>
-<ol type="1">
-<li><p><strong>Title</strong> of the property</p>
-<ul>
-<li>in some cases, the <strong>address</strong> is also found within the title.</li>
-</ul></li>
-<li><p>The core <strong>text description</strong> of the property and its surrounding amenities.</p>
-<ul>
-<li>at times, the neighborhood, address, and other information can be found from this</li>
-</ul></li>
-<li><p><strong>Neighborhood</strong> the property resides in</p></li>
-<li><p>Other home specific information like square footage and listing price.</p></li>
-</ol>
-<p>We store information on the property <em>title</em> and <em>description</em> where applicable with some attention given to retrieving neighborhood and relative geographic coordinates through OSM Nominatim geocoding. However, unsuccessful efforts led to focus on using the title and description while also storing the url the data was retrieved from. 20 pages of data were retrieved (relatively 441 records) through webscraping with miscellaneous other records from later attempts.</p>
-<p>Once the webscraped data was organized into a csv, amenity-related text and the neighborhood of the property was searched to enable similar analyses as the Yelp Data methods. A simple word cloud analysis of the frequency of mentions of neighborhoods and amenity words in all the listings was created as a precursor to other visualizations–alongside finding problems from cleaning. A sample cluster analysis of the neighborhoods similar to one performed for the main amenity types in the Yelp data is also presented (using k=6 clusters similar to what was done for Yelp data).</p>
-<p>The incorporation of the Zillow data is not comprehensive to the same standard as the Yelp data, but it serves as a useful proof of concept for cross-reference with larger numbers of listings and more attention taken to communicate provided insights.</p>
+<p>Zillow data was scraped using <code>selenium</code>, <code>selenium-stealth</code>, and <code>Beautiful Soup</code>, capturing titles, text descriptions, neighborhoods, and other property-specific details. The information, including property titles and descriptions, was compiled into a CSV for further analysis, such as generating word clouds and conducting cluster analyses, similar to our approach with Yelp data.</p>
 </section>
-</section>
-<section id="cluster-analysis" class="level1">
-<h1>Cluster Analysis</h1>
-<p>In Python, we used the alias field to filter and recategorize amenities within each broad category. In Yelp’s database, businesses are not identified using specific categories, but rather a list of labels collectively known as its alias. For instance, a pizza shop’s alias field may be “pizza, american, italian”. Similarly, a bar may have the alias of “bars, cocktailbars, nightlife”. We created three columns based on this field: desc_1, desc_2, and desc_3, corresponding to the three terms in the alias. Then, we removed and replaced non-pertinent (e.g.&nbsp;barbershop in restaurants) and non-specific (e.g.&nbsp;fooddelivery in restaurants) rows until we were left with a core set of secondary description categories (e.g.&nbsp;pizza, chinese, italian). Following, we combined the cleaned datasets containing businesses from each category, and intersected it with tract, neighborhood, and planning district boundaries for our analysis. Using this dataset, we conducted an exploratory analysis followed by a k-means cluster analysis. In order to conduct a full-cluster analysis we first identified the optimal amount of clusters found using KneeLocator, which automatically compares the optimal amount of clusters through multiple indices. The results below show a gradual decline except for a slight “elbow” point found at 9 on the x-axis. From there we conducted a cluster-analysis on various categories, broad and specific.</p>
+<section id="cluster-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="cluster-analysis">Cluster Analysis</h2>
+<p>In Python, we refined our Yelp data categorization using the alias field to extract meaningful sub-categories, creating three descriptive columns from the aliases. This cleaned data, aligned with census tracts and neighborhood boundaries, underpinned our exploratory and k-means cluster analyses. After iterative adjustments, we identified seven meaningful clusters of neighborhoods sharing similar amenity compositions.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

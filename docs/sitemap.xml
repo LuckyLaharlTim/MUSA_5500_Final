@@ -1,51 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/exploratory.html</loc>
-    <lastmod>2023-12-23T03:09:13.664Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/Yelp API/Philly amenity guide.html</loc>
+    <lastmod>2023-12-23T06:05:19.123Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Craigslist Data.html</loc>
-    <lastmod>2023-12-23T03:12:39.498Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Craigslist Data.html</loc>
+    <lastmod>2023-12-23T06:05:18.183Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Zillow Data.html</loc>
-    <lastmod>2023-12-23T03:12:38.408Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Webscraping Zillow Data.html</loc>
+    <lastmod>2023-12-23T06:05:17.439Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Merged Cleaned Zillow and Craiglist Data.html</loc>
-    <lastmod>2023-12-23T03:12:37.352Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/reference.html</loc>
+    <lastmod>2023-12-23T06:05:16.710Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/untitled.html</loc>
-    <lastmod>2023-12-23T03:12:36.567Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Craigslist Data.html</loc>
+    <lastmod>2023-12-23T06:05:15.762Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/Limitations.html</loc>
-    <lastmod>2023-12-23T03:12:31.405Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Webscraping Zillow Data.html</loc>
+    <lastmod>2023-12-23T06:05:15.007Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/5-yelp_clean_and_explore.html</loc>
-    <lastmod>2023-12-23T03:12:31.069Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/text_analysis.html</loc>
+    <lastmod>2023-12-23T06:05:14.194Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/conclusion.html</loc>
+    <lastmod>2023-12-23T15:57:22.409Z</lastmod>
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data prep.html</loc>
-    <lastmod>2023-12-23T03:12:36.299Z</lastmod>
+    <lastmod>2023-12-23T06:05:12.730Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Zillow Data.html</loc>
-    <lastmod>2023-12-23T03:12:36.948Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/Limitations.html</loc>
+    <lastmod>2023-12-23T16:01:41.989Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Craigslist Data.html</loc>
-    <lastmod>2023-12-23T03:12:38.036Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/5-yelp_clean_and_explore.html</loc>
+    <lastmod>2023-12-23T16:01:41.350Z</lastmod>
   </url>
   <url>
-    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Merged Cleaned Zillow and Craiglist Data.html</loc>
-    <lastmod>2023-12-23T03:12:38.805Z</lastmod>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/data_prep.html</loc>
+    <lastmod>2023-12-23T15:58:41.557Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/text_analysis.html</loc>
+    <lastmod>2023-12-23T15:58:29.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/index.html</loc>
+    <lastmod>2023-12-23T15:55:26.837Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/contact/acknowledgements.html</loc>
+    <lastmod>2023-12-23T15:55:48.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/exploratory.html</loc>
+    <lastmod>2023-12-23T15:58:28.561Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/pull_businesses.html</loc>
+    <lastmod>2023-12-23T15:58:34.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/index.html</loc>
+    <lastmod>2023-12-23T15:58:41.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/analysis/methods.html</loc>
+    <lastmod>2023-12-23T16:01:41.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/pull_businesses.html</loc>
+    <lastmod>2023-12-23T06:05:08.216Z</lastmod>
   </url>
   <url>
     <loc>https://luckylaharltim.github.io/MUSA_5500_Final/index.html</loc>
-    <lastmod>2023-12-23T03:12:51.876Z</lastmod>
+    <lastmod>2023-12-23T15:55:23.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/about.html</loc>
+    <lastmod>2023-12-23T15:55:34.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Zillow Data.html</loc>
+    <lastmod>2023-12-23T06:05:14.562Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Merged Cleaned Zillow and Craiglist Data.html</loc>
+    <lastmod>2023-12-23T06:05:15.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/modified_webscraping/Cleaning Web Scraped Craigslist Data.html</loc>
+    <lastmod>2023-12-23T06:05:16.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Zillow Data.html</loc>
+    <lastmod>2023-12-23T06:05:17.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Merged Cleaned Zillow and Craiglist Data.html</loc>
+    <lastmod>2023-12-23T06:05:17.816Z</lastmod>
+  </url>
+  <url>
+    <loc>https://luckylaharltim.github.io/MUSA_5500_Final/data/providence_adu_Code/Cleaning Web Scraped Craigslist Data.html</loc>
+    <lastmod>2023-12-23T06:05:18.839Z</lastmod>
   </url>
 </urlset>
