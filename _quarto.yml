@@ -1,29 +1,49 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 4444
+
 website:
-  navbar:
-    search: false
-    pinned: true
-    left:
-      - href: index.qmd
-        text: 'Home'
-      - href: portfolio.qmd
-        text: 'Work Samples'
-      - href: resume.qmd
-        text: 'About Me'
-    right:
-        - icon: linkedin
-          href: www.linkedin.com/in/annaduan
-        - icon: github
-          href: https://github.com/annaduan09
-        - icon: envelope
-          href: mailto:annaduan@sas.upenn.edu
+  title: "Mapping Philly's Amenity Landscape"
+  site-url: "https://luckylaharltim.github.io/MUSA_5500_Final/" 
+  repo-url: https://github.com/LuckyLaharlTim/MUSA_5500_Final.git 
+  repo-actions: [source]
 
   page-footer:
-    left: "&copy; cc-Anna Duan, 2024"
-        
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-Anna Duan, Trevor Kapuvari, & Timothy Oliver, 2023"
+
+  sidebar:
+    logo: "images/dancing icon.png"
+    pinned: true
+    align: center
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Motivation
+      - href: about.qmd
+        text: "Introduction: Mapping Amenity Clusters"
+        contents:
+          - contact/index.qmd
+          - contact/acknowledgements.qmd
+      - section: analysis/index.qmd
+        contents:
+          - analysis/methods.qmd
+          - analysis/pull_businesses.Rmd
+          - data/scraping_zillow_data.ipynb
+          - analysis/data_prep.ipynb
+          - analysis/exploratory.ipynb
+          - analysis/text_analysis.ipynb
+          - conclusion.qmd
+          
 format:
   html:
     highlight-style: solarized
-    theme: cosmo
+    theme: flatly
+    css: styles.css
+    code-copy: true
+    code-overflow: wrap
+    toc: true
